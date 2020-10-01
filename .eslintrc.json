@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"   // Automatically detect the react version
+      }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "components": ["Link"],
+          "specialLink": ["hrefLeft", "hrefRight"],
+          "aspects": ["invalidHref", "preferButton"]
+        }
+      ],
+      "prettier/prettier": ["error", {}, { "usePrettierrc": true }]  // Use our .prettierrc file as source
+    }
+}
