@@ -8,6 +8,7 @@ const StyledPageTitle = styled.section`
 const Title = styled.h1`
   font-size: 48px;
   line-height: 180px;
+  letter-spacing: 4px;
   text-transform: capitalize;
 `;
 

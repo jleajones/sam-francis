@@ -5,6 +5,7 @@ function BaseContainer({ className, children }) {
 }
 
 export const Container = styled(BaseContainer)`
+  margin: 0 20px;
   @media (min-width: 1024px) {
     width: 85%;
     max-width: 1280px;

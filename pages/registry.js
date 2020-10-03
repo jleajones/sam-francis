@@ -7,6 +7,7 @@ import { LanguageContext } from '../components/context/LanguageProvider';
 import TextBar from '../components/textBar';
 import Collage from '../components/collage';
 import PageTitle from '../components/pageTitle';
+import Footer from '../components/footer';
 
 export default function Registry() {
   const { t } = useTranslation();
@@ -21,6 +22,7 @@ export default function Registry() {
         <title>{pageTitle}</title>
       </Head>
       <PageTitle title={pageTitle} />
+      <Footer />
       <Collage />
       <TextBar
         title="Are you Coming?"

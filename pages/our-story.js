@@ -53,13 +53,19 @@ const Questions = styled.div`
 `;
 
 const GramSection = styled.section`
+  text-align: center;
   padding: 120px 0 180px;
+
+  > h2 {
+    margin-bottom: 40px;
+  }
 `;
 
 const Gram = styled.div`
-  background: #fcfcfc;
   width: calc(${({ size }) => size}px - 2px);
   height: calc(${({ size }) => size}px - 2px);
+  background: #fcfcfc url('${({ url }) => url}.jpg') no-repeat center;
+  background-size: ${({ size }) => size}px auto;
   margin: 1px;
 
   &:hover {
@@ -128,20 +134,20 @@ export default function OurStory() {
         </BackgroundImage>
       </Background>
       <GramSection>
-        <h2>Over the years</h2>
+        <h2>Over the Years</h2>
         <GramContainer>
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
-          <Gram size={gram} />
+          <Gram size={gram} url="img_1" />
+          <Gram size={gram} url="img_2" />
+          <Gram size={gram} url="img_3" />
+          <Gram size={gram} url="img_4" />
+          <Gram size={gram} url="img_5" />
+          <Gram size={gram} url="img_6" />
+          <Gram size={gram} url="img_7" />
+          <Gram size={gram} url="img_8" />
+          <Gram size={gram} url="img_9" />
+          <Gram size={gram} url="img_10" />
+          <Gram size={gram} url="img_11" />
+          <Gram size={gram} url="img_12" />
         </GramContainer>
       </GramSection>
       <TextBar

@@ -10,6 +10,10 @@ const StyledTextBar = styled.div`
   color: #fff;
 `;
 
+const StyledTextBarContainer = styled(SpaceBetweenContainer)`
+  align-items: center;
+`;
+
 const StyledLink = styled.a`
   color: #fff;
   font-weight: bold;
@@ -33,7 +37,7 @@ const RsvpButton = styled(Button)`
 export default function TextBar({ title, description, href, cta }) {
   return (
     <StyledTextBar>
-      <SpaceBetweenContainer>
+      <StyledTextBarContainer>
         <Title>{title}</Title>
         <Description>{description}</Description>
         {href && (
@@ -43,7 +47,7 @@ export default function TextBar({ title, description, href, cta }) {
             </Link>
           </RsvpButton>
         )}
-      </SpaceBetweenContainer>
+      </StyledTextBarContainer>
     </StyledTextBar>
   );
 }

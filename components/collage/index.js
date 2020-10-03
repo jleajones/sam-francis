@@ -21,11 +21,11 @@ export default function Collage() {
       <BoxContainer>
         {[
           {
-            color: 'red',
+            url: 'img_1',
             size
           },
           {
-            color: 'orange',
+            url: 'img_2',
             size
           },
           {
@@ -36,25 +36,26 @@ export default function Collage() {
             cta: '#somehashtag'
           },
           {
-            color: 'yellow',
+            url: 'img_3',
             size
           },
           {
-            color: 'green',
+            url: 'img_4',
             size
           },
           {
-            color: 'blue',
+            url: 'img_5',
             size
           },
           {
-            color: 'indigo',
+            url: 'img_6',
             size
           }
         ].map((box) => (
           <Box
-            key={box}
+            key={box.url || box.color}
             color={box.color}
+            url={box.url}
             size={box.size}
             grow={box.grow}
             href={box.href}
@@ -65,23 +66,23 @@ export default function Collage() {
       <BoxContainer>
         {[
           {
-            color: 'indigo',
+            url: 'img_7',
             size
           },
           {
-            color: 'blue',
+            url: 'img_8',
             size
           },
           {
-            color: 'green',
+            url: 'img_9',
             size
           },
           {
-            color: 'yellow',
+            url: 'img_10',
             size
           },
           {
-            color: 'orange',
+            url: 'img_11',
             size
           },
           {
@@ -92,13 +93,14 @@ export default function Collage() {
             cta: 'sam+fran'
           },
           {
-            color: 'red',
+            url: 'img_12',
             size
           }
         ].map((box) => (
           <Box
-            key={box}
+            key={box.url || box.color}
             color={box.color}
+            url={box.url}
             size={box.size}
             grow={box.grow}
             href={box.href}

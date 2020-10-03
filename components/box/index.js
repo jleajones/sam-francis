@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const StyledBox = styled.div`
   width: ${({ size, grow = 1 }) => grow * size}px;
   height: ${({ size }) => size}px;
-  background: ${({ color }) => color};
+  background: ${({ color }) => color} url('${({ url }) => url}.jpg') no-repeat
+    center;
+  background-size: ${({ size }) => size}px auto;
   color: #fff;
   text-align: center;
   display: flex;
@@ -17,9 +19,9 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-export default function Box({ size, grow, href, cta, color }) {
+export default function Box({ size, grow, href, cta, color, url }) {
   return (
-    <StyledBox size={size} grow={grow} color={color}>
+    <StyledBox size={size} grow={grow} color={color} url={url}>
       {href && (
         <StyledLink href={href} target="_blank" rel="noreferrer">
           {cta}
