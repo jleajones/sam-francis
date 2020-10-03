@@ -1,0 +1,30 @@
+import styled from 'styled-components';
+
+const StyledBox = styled.div`
+  width: ${({ size, grow = 1 }) => grow * size}px;
+  height: ${({ size }) => size}px;
+  background: ${({ color }) => color};
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+`;
+
+const StyledLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+`;
+
+export default function Box({ size, grow, href, cta, color }) {
+  return (
+    <StyledBox size={size} grow={grow} color={color}>
+      {href && (
+        <StyledLink href={href} target="_blank" rel="noreferrer">
+          {cta}
+        </StyledLink>
+      )}
+    </StyledBox>
+  );
+}

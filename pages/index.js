@@ -1,65 +1,97 @@
+import styled from 'styled-components';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Link from 'next/Link';
+import { useRouter } from 'next/router';
 
-export default function Home({ name }) {
+import { useContext } from 'react';
+import { LanguageContext } from '../components/context/LanguageProvider';
+import useTranslation from '../components/hooks/useTranslation';
+import { LANGUAGES } from '../constants';
+import Button from '../components/button';
+
+// const Title = styled.h1`
+//   font-size: 50px;
+//   color: ${({ theme }) => theme.colors.primary};
+// `;
+
+const Bg = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ddddde;
+  text-align: center;
+`;
+
+const BigLogo = styled.div`
+  height: 235px;
+  width: 235px;
+  margin: 80px auto 50px;
+  border: solid 1px ${({ theme }) => theme.colors.accent};
+`;
+
+const HashTag = styled.p`
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  a {
+    color: ${({ theme }) => theme.colors.accent};
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+const Buttons = styled.div`
+  display: flex;
+  justify-content: center;
+
+  button:first-of-type {
+    margin-right: 10px;
+  }
+
+  button:last-of-type {
+    margin-left: 10px;
+  }
+`;
+
+export default function Splash() {
+  const router = useRouter();
+  const { t } = useTranslation();
+  const [, setLocale] = useContext(LanguageContext);
+
+  const onClickHandler = (e) => {
+    if (e.target.innerText.toLowerCase() === 'spanish') {
+      setLocale(LANGUAGES.ES);
+    } else {
+      setLocale(LANGUAGES.EN);
+    }
+
+    router.push('/home');
+  };
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{t('ROOT_PAGE_TITLE')}</title>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Bg>
+        <BigLogo>
+          <Link href="/">Sam&Fran</Link>
+        </BigLogo>
+        <HashTag>
+          <Link href="https://instagram.com">#somehashtag</Link>
+        </HashTag>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <Buttons>
+          <Button onClick={onClickHandler} ghost>
+            english
+          </Button>
+          <Button onClick={onClickHandler} ghost>
+            spanish
+          </Button>
+        </Buttons>
+      </Bg>
+    </>
   );
 }

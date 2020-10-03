@@ -9,10 +9,14 @@
   },
   "dependencies": {
     "next": "9.5.3",
+    "nookies": "^2.4.0",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
