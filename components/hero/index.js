@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Button from '../button';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const BackgroundImage = styled.div`
   height: 720px;

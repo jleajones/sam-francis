@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import Button from '../button';
 import styled from 'styled-components';
 

@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import Navigation from '../navigation';
 import { NAVIGATION_ITEMS } from '../../constants';
 

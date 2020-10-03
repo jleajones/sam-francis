@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import useTranslation from '../hooks/useTranslation';
 

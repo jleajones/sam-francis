@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import styled, { css } from 'styled-components';
 import { CardContainer } from '../containers';
 

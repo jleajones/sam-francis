@@ -1,5 +1,5 @@
 import Button from '../button';
-import Link from 'next/Link';
+import Link from 'next/link';
 import styled from 'styled-components';
 import { SpaceBetweenContainer } from '../containers';
 

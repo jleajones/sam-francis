@@ -9,11 +9,7 @@ import { LanguageContext } from '../components/context/LanguageProvider';
 import Collage from '../components/collage';
 import PageTitle from '../components/pageTitle';
 import { HeroWithText } from '../components/hero';
-import {
-  Container,
-  FlexContainer,
-  SpaceBetweenContainer
-} from '../components/containers';
+import { Container } from '../components/containers';
 import Button from '../components/button';
 import Footer from '../components/footer';
 
