@@ -2,7 +2,7 @@ import { useEffect, useContext, useState } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
 import { setLanguageCookie } from '../utils/language';
-import WithNav from '../layouts/withNav';
+import WithPageTitle from '../layouts/withPageTitle';
 import useTranslation from '../components/hooks/useTranslation';
 import { LanguageContext } from '../components/context/LanguageProvider';
 import TextBar from '../components/textBar';
@@ -86,7 +86,7 @@ export default function OurStory() {
       if (containerSize >= 1280) {
         containerSize = 1280;
       }
-      setGram(containerSize / 4);
+      setGram(containerSize / 3);
     } else {
       console.log(viewport);
       setGram(viewport / 2);
@@ -116,7 +116,6 @@ export default function OurStory() {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <PageTitle title={pageTitle} />
       <Background>
         <BackgroundImage width={width}>
           <QuestionContainer>
@@ -161,4 +160,4 @@ export default function OurStory() {
   );
 }
 
-OurStory.Layout = WithNav;
+OurStory.Layout = WithPageTitle;

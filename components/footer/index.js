@@ -8,20 +8,63 @@ const StyledFooter = styled.section`
   background: linear-gradient(to top, #fff9e7 0, #fff 100%);
 `;
 
+const SmallCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  > div {
+    margin-bottom: 30px;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    padding: 10px 40px 20px;
+
+    > h5 {
+      margin-bottom: 10px;
+    }
+
+    > p {
+      margin-bottom: 2px;
+    }
+
+    &:hover {
+      background: #fff;
+    }
+  }
+`;
+
 export default function Footer({ size, grow, href, cta, color }) {
   return (
     <StyledFooter>
       <SpaceBetweenContainer>
-        <Card
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          href="/our-story"
-          cta="Read more"
-        />
-        <Card
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          href="/our-story"
-          cta="Read more"
-        />
+        <SmallCard>
+          <div>
+            <h5>Meet the Parents</h5>
+            <p>
+              Some text about whats on this page or why we should click through!
+            </p>
+            <p>
+              <a href="">Link to read more</a>
+            </p>
+          </div>
+          <div>
+            <h5>Meet the Wedding Party</h5>
+            <p>
+              Some text about whats on this page or why we should click through!
+            </p>
+            <p>
+              <a href="">Link to read more</a>
+            </p>
+          </div>
+          <div>
+            <h5>Meet the Wedding Party</h5>
+            <p>
+              Some text about whats on this page or why we should click through!
+            </p>
+            <p>
+              <a href="">Link to read more</a>
+            </p>
+          </div>
+        </SmallCard>
         <AccentCard
           accent
           title="Our Story"

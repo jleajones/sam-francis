@@ -4,6 +4,7 @@ import { CardContainer } from '../containers';
 
 const AccentCardContainer = styled(CardContainer)`
   text-align: center;
+  flex-grow: 2;
 
   > div {
     padding: 10px 40px 20px;

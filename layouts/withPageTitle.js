@@ -5,7 +5,7 @@ import Gutter from '../components/gutter';
 
 const StyledHeader = styled(Header)`
    {
-    position: absolute;
+    background: #000;
   }
 `;
 

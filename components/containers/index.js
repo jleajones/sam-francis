@@ -27,6 +27,12 @@ export const SpaceBetweenContainer = styled(FlexContainer)`
   }
 `;
 
+export const SpaceAroundContainer = styled(FlexContainer)`
+  @media (min-width: 1024px) {
+    justify-content: space-around;
+  }
+`;
+
 export const CardContainer = styled.div`
   width: 100%;
   @media (min-width: 1024px) {

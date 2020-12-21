@@ -6,27 +6,27 @@ export const LANGUAGES = {
 export const NAVIGATION_ITEMS = [
   {
     key: 'HOME_NAV_TEXT',
-    slug: 'home'
+    slug: '/home'
   },
   {
     key: 'OUR_STORY_NAV_TEXT',
-    slug: 'our-story'
+    slug: '/our-story'
   },
   {
     key: 'WEDDING_CYPHER_NAV_TEXT',
-    slug: 'wedding-cypher'
+    slug: '/wedding-cypher'
   },
   {
     key: 'GETTING_THERE_NAV_TEXT',
-    slug: 'getting-there'
+    slug: '/getting-there'
   },
   {
     key: 'RSVP_NAV_TEXT',
-    slug: 'rsvp'
+    slug: '/rsvp'
   },
   {
     key: 'REGISTRY_NAV_TEXT',
-    slug: 'registry'
+    slug: '/registry'
   }
 ];
 

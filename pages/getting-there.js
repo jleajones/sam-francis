@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import { setLanguageCookie } from '../utils/language';
-import WithNav from '../layouts/withNav';
+import WithPageTitle from '../layouts/withPageTitle';
 import useTranslation from '../components/hooks/useTranslation';
 import { LanguageContext } from '../components/context/LanguageProvider';
 import TextBar from '../components/textBar';
@@ -60,9 +60,6 @@ export default function GettingThere() {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-
-      <PageTitle title={pageTitle} />
-
       <MapContainer>
         <Map />
         <MapText>
@@ -107,4 +104,4 @@ export default function GettingThere() {
   );
 }
 
-GettingThere.Layout = WithNav;
+GettingThere.Layout = WithPageTitle;

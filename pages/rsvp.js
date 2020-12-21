@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Head from 'next/head';
 import { setLanguageCookie } from '../utils/language';
-import WithNav from '../layouts/withNav';
+import WithPageTitle from '../layouts/withPageTitle';
 import useTranslation from '../components/hooks/useTranslation';
 import { LanguageContext } from '../components/context/LanguageProvider';
 import Collage from '../components/collage';
@@ -108,7 +108,6 @@ export default function Rsvp() {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <PageTitle title={pageTitle} />
       <HeroWithText
         title="<span>RSVP</span><br/>Please"
         onClick={() => {
@@ -161,4 +160,4 @@ export default function Rsvp() {
   );
 }
 
-Rsvp.Layout = WithNav;
+Rsvp.Layout = WithPageTitle;
