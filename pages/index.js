@@ -16,10 +16,29 @@ import Button from '../components/button';
 
 const Bg = styled.div`
   position: absolute;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #ddddde;
-  text-align: center;
+  height: 100%;
+  overflow: hidden;
+`;
+
+const Video = styled.video`
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+`;
+
+const Content = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  top: 0;
 `;
 
 const BigLogo = styled.div`
@@ -33,6 +52,7 @@ const HashTag = styled.p`
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 50px;
+  text-align: center;
   a {
     color: ${({ theme }) => theme.colors.accent};
     text-decoration: none;
@@ -76,21 +96,26 @@ export default function Splash() {
       </Head>
 
       <Bg>
-        <BigLogo>
-          <Link href="/">Sam&Fran</Link>
-        </BigLogo>
-        <HashTag>
-          <Link href="https://instagram.com">#somehashtag</Link>
-        </HashTag>
+        <Video className="videoTag" autoPlay loop muted>
+          <source src="/clip_2.mp4" type="video/mp4" />
+        </Video>
+        <Content>
+          <BigLogo>
+            <Link href="/">Sam&Fran</Link>
+          </BigLogo>
+          <HashTag>
+            <Link href="https://instagram.com">#somehashtag</Link>
+          </HashTag>
 
-        <Buttons>
-          <Button onClick={onClickHandler} ghost>
-            english
-          </Button>
-          <Button onClick={onClickHandler} ghost>
-            spanish
-          </Button>
-        </Buttons>
+          <Buttons>
+            <Button onClick={onClickHandler} ghost>
+              english
+            </Button>
+            <Button onClick={onClickHandler} ghost>
+              spanish
+            </Button>
+          </Buttons>
+        </Content>
       </Bg>
     </>
   );

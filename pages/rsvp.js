@@ -154,8 +154,8 @@ export default function Rsvp() {
           </Input>
         </form>
       </Form>
-      <Footer />
-      <Collage />
+      {/*<Footer />*/}
+      {/*<Collage />*/}
     </>
   );
 }
