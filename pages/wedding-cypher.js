@@ -15,7 +15,7 @@ const BRIDES_QUESTION = 'Name of lip color, if you had one?';
 
 const bridesmaids = [
   {
-    name: 'Janelle Martinez',
+    name: 'Janel Martinez',
     title: 'Maid of Honor',
     question: BRIDES_QUESTION,
     answer: 'Boss Swag - always making me feel like a bawse.'
@@ -139,7 +139,7 @@ const groomsmen = [
   }
 ];
 
-const parents = [
+const mothers = [
   {
     name: 'Sean Pickett',
     title: 'Groomsman',
@@ -158,14 +158,25 @@ const parents = [
     title: 'Groomsman',
     question: GROOMS_QUESTION,
     answer: "I'd be an A&R for an up and coming Hip Hop/Urban artist."
-  },
-  {
-    name: 'Curtis Yarborough',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be in music production."
   }
 ];
+
+const fathers = [
+  {
+    name: 'Sean Pickett',
+    title: 'Groomsman',
+    question: GROOMS_QUESTION,
+    answer:
+      "I'd be a digital nomad. I would love to work remotely from different countries."
+  },
+  {
+    name: 'Luis Pinzon',
+    title: 'Groomsman',
+    question: GROOMS_QUESTION,
+    answer: "I'd be a travel blogger."
+  }
+];
+
 const Background = styled.section`
   background: linear-gradient(to bottom, #fff9e7 0, #fff 100%);
 `;
@@ -206,20 +217,26 @@ export default function WeddingCypher() {
         <People people={groomsmen} />
 
         <TitleContainer>
-          <h2>Meet the Parent</h2>
-          <p>Some text about the rents...or maybe not. haha!</p>
+          <h2>Meet the Mothers</h2>
+          <p>Some text about the mothers...or maybe not. haha!</p>
         </TitleContainer>
-        <People people={parents} />
+        <People people={mothers} />
+
+        <TitleContainer>
+          <h2>Meet the Fathers</h2>
+          <p>Some text about the fathers...or maybe not. haha!</p>
+        </TitleContainer>
+        <People people={fathers} />
       </Background>
 
-      <Collage />
-      <TextBar
-        title="Are you Coming?"
-        description="Please let us know if you are going to be able to make it. We'd love
-          to see you there, but understand everyone wont' be able to make it."
-        href="/rsvp"
-        cta="rsvp"
-      />
+      {/*<Collage />*/}
+      {/*<TextBar*/}
+      {/*  title="Are you Coming?"*/}
+      {/*  description="Please let us know if you are going to be able to make it. We'd love*/}
+      {/*    to see you there, but understand everyone wont' be able to make it."*/}
+      {/*  href="/rsvp"*/}
+      {/*  cta="rsvp"*/}
+      {/*/>*/}
     </>
   );
 }

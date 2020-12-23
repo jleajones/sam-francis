@@ -64,7 +64,7 @@ const GramSection = styled.section`
 const Gram = styled.div`
   width: calc(${({ size }) => size}px - 2px);
   height: calc(${({ size }) => size}px - 2px);
-  background: #fcfcfc url('${({ url }) => url}.jpg') no-repeat center;
+  background: #fcfcfc url('${({ url }) => url}.png') no-repeat center;
   background-size: ${({ size }) => size}px auto;
   margin: 1px;
 
@@ -135,27 +135,26 @@ export default function OurStory() {
       <GramSection>
         <h2>Over the Years</h2>
         <GramContainer>
-          <Gram size={gram} url="img_1" />
-          <Gram size={gram} url="img_2" />
-          <Gram size={gram} url="img_3" />
-          <Gram size={gram} url="img_4" />
-          <Gram size={gram} url="img_5" />
-          <Gram size={gram} url="img_6" />
-          <Gram size={gram} url="img_7" />
-          <Gram size={gram} url="img_8" />
-          <Gram size={gram} url="img_9" />
-          <Gram size={gram} url="img_10" />
-          <Gram size={gram} url="img_11" />
-          <Gram size={gram} url="img_12" />
+          <Gram size={gram} url="os_1" />
+          <Gram size={gram} url="os_2" />
+          <Gram size={gram} url="os_3" />
+          <Gram size={gram} url="os_4" />
+          <Gram size={gram} url="os_5" />
+          <Gram size={gram} url="os_6" />
+          <Gram size={gram} url="os_7" />
+          <Gram size={gram} url="os_8" />
+          <Gram size={gram} url="os_9" />
+          <Gram size={gram} url="os_10" />
+          <Gram size={gram} url="os_11" />
+          <Gram size={gram} url="os_12" />
+          <Gram size={gram} url="os_13" />
+          <Gram size={gram} url="os_14" />
+          <Gram size={gram} url="os_15" />
+          <Gram size={gram} url="os_16" />
+          <Gram size={gram} url="os_17" />
+          <Gram size={gram} url="os_18" />
         </GramContainer>
       </GramSection>
-      <TextBar
-        title="Are you Coming?"
-        description="Please let us know if you are going to be able to make it. We'd love
-          to see you there, but understand everyone wont' be able to make it."
-        href="/rsvp"
-        cta="rsvp"
-      />
     </>
   );
 }

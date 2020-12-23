@@ -45,7 +45,7 @@ export default function Registry() {
           <a href="http://goolg.com">Google</a>
         </SpaceBetweenContainer>
       </section>
-      <Footer />
+      {/*<Footer />*/}
       <Collage />
       <TextBar
         title="Are you Coming?"

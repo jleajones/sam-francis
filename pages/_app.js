@@ -27,6 +27,7 @@ const theme = {
     accent: '#faca19',
     accentDark: '#DBAD05',
     bgLight: '#fafafa',
+    greyLight: '#e2e2e2',
     greyDark: '#ccc'
   }
 };

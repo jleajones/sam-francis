@@ -8,7 +8,7 @@ import useTranslation from '../components/hooks/useTranslation';
 import { LanguageContext } from '../components/context/LanguageProvider';
 import Collage from '../components/collage';
 import PageTitle from '../components/pageTitle';
-import { HeroWithText } from '../components/hero';
+import { Hero, HeroWithText } from '../components/hero';
 import { Container } from '../components/containers';
 import Button from '../components/button';
 import Footer from '../components/footer';
@@ -115,6 +115,7 @@ export default function Rsvp() {
         }}
         cta="RSVP"
         message="<span>MARINA DEL REY</span><br/>JULY 1ST, 2021 at 5:15PM"
+        bgImage={'rsvp_bg.png'}
       />
       <Form>
         <h2>Add your details</h2>

@@ -21,38 +21,45 @@ const Bg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: #000;
+  display: flex;
 `;
 
 const Video = styled.video`
-  position: relative;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  min-height: 100%;
-  min-width: 100%;
+  align-self: center;
+  width: 100%;
 `;
 
-const Content = styled.div`
+const Container = styled.div`
+  top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 999;
-  top: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
-const BigLogo = styled.div`
-  height: 235px;
-  width: 235px;
-  margin: 80px auto 50px;
-  border: solid 1px ${({ theme }) => theme.colors.accent};
+const Content = styled.div`
+  position: relative;
+  top: 70%;
 `;
+
+// const BigLogo = styled.div`
+//   position: absolute;
+//   height: 235px;
+//   width: 235px;
+//   border: solid 1px ${({ theme }) => theme.colors.accent};
+// `;
 
 const HashTag = styled.p`
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   a {
     color: ${({ theme }) => theme.colors.accent};
     text-decoration: none;
@@ -97,25 +104,28 @@ export default function Splash() {
 
       <Bg>
         <Video className="videoTag" autoPlay loop muted>
-          <source src="/clip_2.mp4" type="video/mp4" />
+          <source src="/clip_1.mov" type="video/mp4" />
         </Video>
-        <Content>
-          <BigLogo>
-            <Link href="/">Sam&Fran</Link>
-          </BigLogo>
-          <HashTag>
-            <Link href="https://instagram.com">#somehashtag</Link>
-          </HashTag>
+        <Container>
+          {/*<BigLogo>*/}
+          {/*  <Link href="/">Sam&Fran</Link>*/}
+          {/*</BigLogo>*/}
 
-          <Buttons>
-            <Button onClick={onClickHandler} ghost>
-              english
-            </Button>
-            <Button onClick={onClickHandler} ghost>
-              spanish
-            </Button>
-          </Buttons>
-        </Content>
+          <Content>
+            <HashTag>
+              <Link href="https://instagram.com">#somehashtag</Link>
+            </HashTag>
+
+            <Buttons>
+              <Button onClick={onClickHandler} ghost>
+                english
+              </Button>
+              <Button onClick={onClickHandler} ghost>
+                spanish
+              </Button>
+            </Buttons>
+          </Content>
+        </Container>
       </Bg>
     </>
   );

@@ -27,11 +27,12 @@ const Title = styled.h4`
   font-size: 18px;
   margin-bottom: 30px;
   letter-spacing: 8px;
+  color: ${({ theme }) => theme.colors.accent};
 `;
 
 const Heading = styled.h3`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.accent};
+  // color: ${({ theme }) => theme.colors.accent};
   margin-bottom: 10px;
   letter-spacing: 3px;
 `;
@@ -39,9 +40,9 @@ const Heading = styled.h3`
 const Description = styled.h2`
   font-size: 12px;
   font-weight: normal;
-  color: ${({ theme }) => theme.colors.accent};
+  // color: ${({ theme }) => theme.colors.accent};
   letter-spacing: 3px;
-  font-weight: 300;
+  // font-weight: 300;
   line-height: 18px;
 `;
 

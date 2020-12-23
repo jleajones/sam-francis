@@ -13,31 +13,36 @@ import { FlexContainer } from '../components/containers';
 
 const MapContainer = styled(FlexContainer)`
   padding: 120px 0 160px;
+  flex-direction: column;
 `;
 
 const Map = styled.div`
   width: 100%;
-  margin: 0 auto 40px;
   border: solid 1px #ccc;
   height: 460px;
-  @media (min-width: 1024px) {
-    height: 560px;
-    width: 70%;
-    margin: 0;
-  }
+  margin-bottom: 40px;
 `;
 
-const MapText = styled.div`
-  @media (min-width: 1024px) {
-    margin-left: 40px;
+const MapText = styled(FlexContainer)`
+  width: 100%;
+  border-bottom: solid 1px ${({ theme }) => theme.colors.greyLight};
+  padding: 40px 0;
+
+  :last-of-type {
+    border: none;
   }
 `;
 
 const Textblock = styled.div`
-  margin-bottom: 80px;
-
+  margin-bottom: 20px;
+  margin-right: 20px;
   p > b {
     font-family: futura-pt-bold;
+  }
+  width: 37%;
+
+  :first-of-type {
+    width: 25%;
   }
 `;
 
@@ -90,16 +95,74 @@ export default function GettingThere() {
             </p>
           </Textblock>
         </MapText>
+
+        <MapText>
+          <Textblock>
+            <Heading>Hotel</Heading>
+            <p>
+              <b>Option 1</b>
+            </p>
+            <p>Address:1 Marina Dr. Bronx, NY 10465</p>
+            <p>Phone: xxx-xxx-xxxx</p>
+            <p>
+              Website: <a href="http://google.com">www.somewebstie.com</a>
+            </p>
+          </Textblock>
+          <Textblock>
+            <Heading>Travel Information</Heading>
+            <p>
+              Morbi eleifend pellentesque ornare. Pellentesque ut orci ornare
+              lectus malesuada semper eu ac diam. Donec id varius augue. Donec
+              aliquam auctor bibendum.
+            </p>
+          </Textblock>
+          <Textblock>
+            <Heading>Parking Detail</Heading>
+            <p>
+              Upon entering Marina Del Rey, parking attendants will assist you
+              with the convenience of complimentary valet parking.
+            </p>
+          </Textblock>
+        </MapText>
+
+        <MapText>
+          <Textblock>
+            <Heading>Hotel</Heading>
+            <p>
+              <b>Option 2</b>
+            </p>
+            <p>Address:1 Marina Dr. Bronx, NY 10465</p>
+            <p>Phone: xxx-xxx-xxxx</p>
+            <p>
+              Website: <a href="http://google.com">www.somewebstie.com</a>
+            </p>
+          </Textblock>
+          <Textblock>
+            <Heading>Travel Information</Heading>
+            <p>
+              Morbi eleifend pellentesque ornare. Pellentesque ut orci ornare
+              lectus malesuada semper eu ac diam. Donec id varius augue. Donec
+              aliquam auctor bibendum.
+            </p>
+          </Textblock>
+          <Textblock>
+            <Heading>Parking Detail</Heading>
+            <p>
+              Upon entering Marina Del Rey, parking attendants will assist you
+              with the convenience of complimentary valet parking.
+            </p>
+          </Textblock>
+        </MapText>
       </MapContainer>
-      <Footer />
-      <Collage />
-      <TextBar
-        title="Are you Coming?"
-        description="Please let us know if you are going to be able to make it. We'd love
-          to see you there, but understand everyone wont' be able to make it."
-        href="/rsvp"
-        cta="rsvp"
-      />
+      {/*<Footer />*/}
+      {/*<Collage />*/}
+      {/*<TextBar*/}
+      {/*  title="Are you Coming?"*/}
+      {/*  description="Please let us know if you are going to be able to make it. We'd love*/}
+      {/*    to see you there, but understand everyone wont' be able to make it."*/}
+      {/*  href="/rsvp"*/}
+      {/*  cta="rsvp"*/}
+      {/*/>*/}
     </>
   );
 }

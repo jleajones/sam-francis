@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslation';
 import { useRouter } from 'next/router';
+import { SMALL } from '../../constants';
 
 const NavContainer = styled.nav`
   display: flex;
@@ -26,18 +27,20 @@ const StyledLink = styled.a`
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: ${({ size }) => (size === SMALL ? `12px` : `18px`)};
   cursor: pointer;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  text-shadow: ${({ size }) =>
+    size === SMALL ? `none` : `0 0 2px rgba(0, 0, 0, 0.8)`};
   letter-spacing: 2px;
-  border-bottom: ${({ selected, theme }) =>
-    selected ? `solid 3px ${theme.colors.accent}` : `none`};
+  border-bottom: ${({ selected, size, theme }) =>
+    selected && size !== SMALL ? `solid 3px ${theme.colors.accent}` : `none`};
   &:hover {
-    color: ${({ theme }) => theme.colors.accent};
+    color: ${({ theme, size }) =>
+      size === SMALL ? '#222' : theme.colors.accent};
   }
 `;
 
-const NavigationItem = ({ slug, href }) => {
+const NavigationItem = ({ slug, href, size }) => {
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -49,9 +52,11 @@ const NavigationItem = ({ slug, href }) => {
   }
 
   return (
-    <NavItem>
+    <NavItem size={size}>
       <Link href={href}>
-        <StyledLink selected={selected}>{t(slug)}</StyledLink>
+        <StyledLink selected={selected} size={size}>
+          {t(slug)}
+        </StyledLink>
       </Link>
     </NavItem>
   );
@@ -59,14 +64,20 @@ const NavigationItem = ({ slug, href }) => {
 
 NavigationItem.propTypes = {
   href: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired
+  slug: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(['', SMALL])
 };
 
-export default function Navigation({ items }) {
+export default function Navigation({ items, size }) {
   return (
-    <NavContainer>
+    <NavContainer size={size}>
       {items.map((item) => (
-        <NavigationItem key={item.key} slug={item.key} href={item.slug} />
+        <NavigationItem
+          key={item.key}
+          slug={item.key}
+          href={item.slug}
+          size={size}
+        />
       ))}
     </NavContainer>
   );
@@ -78,5 +89,6 @@ Navigation.propTypes = {
       key: PropTypes.string.isRequired,
       slug: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  size: PropTypes.oneOf(['', SMALL])
 };

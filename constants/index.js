@@ -3,6 +3,8 @@ export const LANGUAGES = {
   ES: 'es'
 };
 
+export const SMALL = 'S';
+
 export const NAVIGATION_ITEMS = [
   {
     key: 'HOME_NAV_TEXT',

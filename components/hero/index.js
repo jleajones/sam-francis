@@ -1,25 +1,23 @@
 import styled from 'styled-components';
 import Button from '../button';
 import Link from 'next/link';
+import { FlexContainer } from '../containers';
 
 const BackgroundImage = styled.div`
   height: 720px;
-  background: url('/Artboard 2.png') no-repeat;
+  background: url(${({ bgImage }) => bgImage}) no-repeat;
   background-size: cover;
   border-bottom: solid 8px ${({ theme }) => theme.colors.accent};
-  background-position: 23% 0;
   @media (min-width: 1024px) {
     // background-position: 0 0;
   }
 `;
 
 const Text = styled.div`
-  text-align: center;
   padding-top: 300px;
 `;
 
-const Color = styled.div`
-  background: rgba(0, 0, 0, 0.3);
+const Color = styled(FlexContainer)`
   padding: 40px 0;
 `;
 
@@ -47,23 +45,27 @@ const Title = styled.h1`
   }
 `;
 
-export function Hero() {
-  return <BackgroundImage />;
+export function Hero({ bgImage }) {
+  return <BackgroundImage bgImage={bgImage} />;
 }
 
-export function HeroWithText({ title, href, cta, onClick, message }) {
+export function HeroWithText({ bgImage, title, href, cta, onClick, message }) {
   return (
-    <BackgroundImage>
+    <BackgroundImage bgImage={bgImage}>
       <Text>
         <Color>
-          <Title dangerouslySetInnerHTML={{ __html: title }} />
-          {message && <Message dangerouslySetInnerHTML={{ __html: message }} />}
-          {onClick && <Button onClick={onClick}>{cta}</Button>}
-          {href && (
-            <Button>
-              <Link href={href}>{cta}</Link>
-            </Button>
-          )}
+          <div>
+            <Title dangerouslySetInnerHTML={{ __html: title }} />
+            {message && (
+              <Message dangerouslySetInnerHTML={{ __html: message }} />
+            )}
+            {onClick && <Button onClick={onClick}>{cta}</Button>}
+            {href && (
+              <Button>
+                <Link href={href}>{cta}</Link>
+              </Button>
+            )}
+          </div>
         </Color>
       </Text>
     </BackgroundImage>

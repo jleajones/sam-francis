@@ -6,12 +6,16 @@ import { SpaceBetweenContainer } from '../containers';
 const StyledTextBar = styled.div`
   border-top: solid 1px #fff;
   background: #000;
-  padding: 40px 0;
+  padding: 140px 0;
   color: #fff;
 `;
 
 const StyledTextBarContainer = styled(SpaceBetweenContainer)`
   align-items: center;
+  flex-direction: column;
+  width: 760px;
+  max-width: 90%;
+  text-align: center;
 `;
 
 const StyledLink = styled.a`
@@ -22,12 +26,13 @@ const StyledLink = styled.a`
 const Title = styled.h5`
   color: #fff;
   font-size: 30px;
-  width: 15%;
+  margin-bottom: 40px;
 `;
 
 const Description = styled.p`
   color: #fff;
-  width: 60%;
+  font-size: 18px;
+  margin-bottom: 80px;
 `;
 
 const RsvpButton = styled(Button)`

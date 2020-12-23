@@ -1,7 +1,7 @@
 import { useEffect, useContext } from 'react';
 import Head from 'next/head';
 import { setLanguageCookie } from '../utils/language';
-import WithNav from '../layouts/withNav';
+import WithPageTitle from '../layouts/withPageTitle';
 import useTranslation from '../components/hooks/useTranslation';
 import { LanguageContext } from '../components/context/LanguageProvider';
 import VerticalPromo from '../components/verticalPromo';
@@ -16,7 +16,7 @@ import { FlexContainer, SpaceBetweenContainer } from '../components/containers';
 
 const Promos = styled.section`
   padding: 120px 0 160px;
-  background: linear-gradient(to bottom, #fff9e7 0, #fff 100%);
+  // background: linear-gradient(to bottom, #fff9e7 0, #fff 100%);
 `;
 
 const Ctas = styled.section`
@@ -38,7 +38,7 @@ export default function Home() {
         <title>{pageTitle}</title>
       </Head>
 
-      <Hero />
+      <Hero bgImage={'home_bg.png'} />
       <Promos>
         <SpaceBetweenContainer>
           {HOME_PAGE_PROMOS.map((promo) => (
@@ -52,26 +52,26 @@ export default function Home() {
           ))}
         </SpaceBetweenContainer>
       </Promos>
-      <Ctas>
-        <FlexContainer>
-          {[
-            {
-              text: 'Please let us know if you are coming.',
-              href: '/rsvp',
-              cta: 'rsvp'
-            },
-            {
-              text: 'Where are we registered?',
-              href: '/registry',
-              cta: 'view'
-            }
-          ].map((cta) => (
-            <Cta text={cta.text} href={cta.href} key={cta.href} cta={cta.cta} />
-          ))}
-        </FlexContainer>
-      </Ctas>
-      <Footer />
-      <Collage />
+      {/*<Ctas>*/}
+      {/*  <FlexContainer>*/}
+      {/*    {[*/}
+      {/*      {*/}
+      {/*        text: 'Please let us know if you are coming.',*/}
+      {/*        href: '/rsvp',*/}
+      {/*        cta: 'rsvp'*/}
+      {/*      },*/}
+      {/*      {*/}
+      {/*        text: 'Where are we registered?',*/}
+      {/*        href: '/registry',*/}
+      {/*        cta: 'view'*/}
+      {/*      }*/}
+      {/*    ].map((cta) => (*/}
+      {/*      <Cta text={cta.text} href={cta.href} key={cta.href} cta={cta.cta} />*/}
+      {/*    ))}*/}
+      {/*  </FlexContainer>*/}
+      {/*</Ctas>*/}
+      {/*<Footer />*/}
+      {/*<Collage />*/}
       <TextBar
         title="Are you Coming?"
         description="Please let us know if you are going to be able to make it. We'd love
@@ -83,4 +83,4 @@ export default function Home() {
   );
 }
 
-Home.Layout = WithNav;
+Home.Layout = WithPageTitle;
