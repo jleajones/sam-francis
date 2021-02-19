@@ -60,14 +60,8 @@ const HashTag = styled.p`
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  a {
-    color: ${({ theme }) => theme.colors.accent};
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  color: ${({ theme }) => theme.colors.accent};
+  text-decoration: none;
 `;
 const Buttons = styled.div`
   display: flex;
@@ -112,9 +106,7 @@ export default function Splash() {
           {/*</BigLogo>*/}
 
           <Content>
-            <HashTag>
-              <Link href="https://instagram.com">#somehashtag</Link>
-            </HashTag>
+            <HashTag>#WeGotTheGreenLight</HashTag>
 
             <Buttons>
               <Button onClick={onClickHandler} ghost>

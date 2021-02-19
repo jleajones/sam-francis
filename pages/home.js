@@ -73,9 +73,8 @@ export default function Home() {
       {/*<Footer />*/}
       {/*<Collage />*/}
       <TextBar
-        title="Are you Coming?"
-        description="Please let us know if you are going to be able to make it. We'd love
-          to see you there, but understand everyone wont' be able to make it."
+        title={t('ARE_YOU_COMING_TITLE')}
+        description={t('ARE_YOU_COMING_DESC')}
         href="/rsvp"
         cta="rsvp"
       />

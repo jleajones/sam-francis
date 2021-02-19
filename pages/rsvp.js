@@ -47,7 +47,8 @@ const Input = styled.div`
   }
 
   > input,
-  > textarea {
+  > textarea,
+  > select {
     font-size: 32px;
     font-family: 'futura-pt';
     background: transparent;
@@ -79,7 +80,11 @@ const Input = styled.div`
 `;
 
 const TextareaInput = styled(Input)`
+  display: block;
   margin-top: 20px;
+  > p {
+    color: #999;
+  }
   > textarea {
     width: 100%;
     margin-top: 10px;
@@ -109,21 +114,50 @@ export default function Rsvp() {
         <title>{pageTitle}</title>
       </Head>
       <HeroWithText
-        title="<span>RSVP</span><br/>Please"
+        title="<span>Are you coming?</span>"
         onClick={() => {
-          console.log('go to form...');
+          document.getElementById('form').scrollIntoView({
+            behavior: 'smooth'
+          });
         }}
         cta="RSVP"
         message="<span>MARINA DEL REY</span><br/>JULY 1ST, 2021 at 5:15PM"
         bgImage={'rsvp_bg.png'}
       />
       <Form>
-        <h2>Add your details</h2>
-        <p style={{ marginBottom: '40px' }}>
-          We would love to see you, but totally understand if you cannot make
-          it. Please let us know either way, thanks!
+        <h2 style={{ marginBottom: '20px' }}>
+          Please confirm your presence by May 1st, 2021
+        </h2>
+        <p style={{ marginBottom: '40px', width: '80%' }}>
+          Due to restrictions, we ask that you please only RSVP for yourself and
+          if there is another person listed on your invitation. Please note,
+          invitations are for 21 and over. Many thanks for your understanding.
         </p>
-        <form>
+        <p
+          style={{
+            marginBottom: '40px',
+            background: 'red',
+            color: 'white',
+            maxWidth: '80%',
+            padding: '16px 8px',
+            fontWeight: 'bold',
+            display: 'flex',
+            justifyContent: 'flex-end',
+            flexDirection: 'row',
+            alignItems: 'center'
+          }}
+        >
+          <span style={{ marginRight: '12px', color: '#fff' }}>
+            <img src="/info-24px.svg" />
+          </span>
+          <em style={{ flexGrow: 2 }}>
+            Due to COVID-19 and the current social unrest in the world, we ask
+            that you please be patient and flexible with us. If there are any
+            changes to the wedding date or details, we will be sure to
+            communicate this with you as soon as possible. Thank you!.
+          </em>
+        </p>
+        <form id="form">
           <Inputs>
             <Input>
               <label htmlFor="firstName">first name</label>
@@ -133,19 +167,54 @@ export default function Rsvp() {
               <label htmlFor="lastName">last name</label>
               <input type="text" id="lastName" />
             </Input>
+            <Input>
+              <label htmlFor="firstName_guest">first name</label>
+              <input type="text" id="firstName_guest" />
+            </Input>
+            <Input>
+              <label htmlFor="lastName_guest">last name</label>
+              <input type="text" id="lastName_guest" />
+            </Input>
           </Inputs>
           <Inputs>
-            <Input>
-              <label htmlFor="party">Number in party</label>
-              <input type="text" id="party" />
-            </Input>
             <Input>
               <label htmlFor="email">email address</label>
               <input type="text" id="email" />
             </Input>
+            <Input>
+              <label htmlFor="email">email address</label>
+              <input type="text" id="email_guest" />
+            </Input>
+          </Inputs>
+          <Inputs>
+            <Input>
+              <label htmlFor="yes">
+                <input type="checkbox" id="yes" /> Yes, I'm in there!
+              </label>
+            </Input>
+            <Input>
+              <label htmlFor="no">
+                <input type="checkbox" id="no" /> I'd love to be there, but I
+                won't be able to make it.
+              </label>
+            </Input>
+            <Input>
+              <label htmlFor="yes_guest">
+                <input type="checkbox" id="yes_guest" /> Yes, I'm in there!
+              </label>
+            </Input>
+            <Input>
+              <label htmlFor="no_guest">
+                <input type="checkbox" id="no_guest" /> I'd love to be there,
+                but I won't be able to make it.
+              </label>
+            </Input>
           </Inputs>
           <TextareaInput>
-            <label htmlFor="email">message</label>
+            <p>
+              Leave us a message, advice or any suggestions on fun and new
+              things we can do as we enter our marriage!
+            </p>
             <textarea />
           </TextareaInput>
           <Input>

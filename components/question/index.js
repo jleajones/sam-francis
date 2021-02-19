@@ -12,7 +12,7 @@ const StyledQuestion = styled.div`
 
 const QuestionText = styled.h2`
   font-size: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 36px;
   color: ${({ theme }) => theme.colors.greyDark};
 `;
 
@@ -48,12 +48,14 @@ export default function Question({ questionKey, brideKey, groomKey }) {
       </QuestionText>
       {brideKey && (
         <Answer>
-          <Name>Francis:</Name> <p>{t(brideKey)}</p>
+          <Name>Francis:</Name>
+          <p dangerouslySetInnerHTML={{ __html: t(brideKey) }} />
         </Answer>
       )}
       {groomKey && (
         <Answer>
-          <Name>Sam:</Name> <p>{t(groomKey)}</p>
+          <Name>Sam:</Name>
+          <p dangerouslySetInnerHTML={{ __html: t(groomKey) }} />
         </Answer>
       )}
     </StyledQuestion>

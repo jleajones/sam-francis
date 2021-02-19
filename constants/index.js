@@ -59,17 +59,30 @@ export const HOME_PAGE_PROMOS = [
   }
 ];
 
+export const OUR_STORY_INTRO = {
+  key: 'OUR_STORY_INTRO'
+};
+
+export const OVER_THE_YEARS = {
+  key: 'OVER_THE_YEARS'
+};
+
 export const OUR_STORY_QUESTIONS = [
   {
-    key: 'OUR_STORY_SAMPLE_QUESTION',
-    questionKey: 'OUR_STORY_SAMPLE_QUESTION',
-    brideKey: 'OUR_STORY_SAMPLE_BRIDE',
-    groomKey: 'OUR_STORY_SAMPLE_GROOM'
+    key: 'OUR_STORY_QUESTION1',
+    questionKey: 'OUR_STORY_QUESTION1',
+    brideKey: 'OUR_STORY_QUESTION1_BRIDE',
+    groomKey: 'OUR_STORY_QUESTION1_GROOM'
   },
   {
-    key: 'OUR_STORY_QUESTION_2',
-    questionKey: 'OUR_STORY_QUESTION_2',
-    brideKey: 'OUR_STORY_BRIDE_ANSWER_2',
-    groomKey: 'OUR_STORY_GROOM_ANSWER_2'
+    key: 'OUR_STORY_QUESTION2',
+    questionKey: 'OUR_STORY_QUESTION2',
+    groomKey: 'OUR_STORY_QUESTION2_GROOM'
+  },
+  {
+    key: 'OUR_STORY_QUESTION3',
+    questionKey: 'OUR_STORY_QUESTION3',
+    brideKey: 'OUR_STORY_QUESTION3_BRIDE',
+    groomKey: 'OUR_STORY_QUESTION3_GROOM'
   }
 ];

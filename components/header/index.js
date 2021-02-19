@@ -18,7 +18,14 @@ const HeaderContainer = styled(SpaceBetweenContainer)`
 const Logo = styled.div`
   width: 90px;
   height: 90px;
-  border: solid 1px #fff;
+  background: url('logo.png') no-repeat;
+  background-size: contain;
+  a {
+    text-indent: -99999px;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 export default function Header({ className }) {
@@ -26,7 +33,7 @@ export default function Header({ className }) {
     <StyledHeader className={className}>
       <HeaderContainer>
         <Logo>
-          <Link href="/">Sam&Fran</Link>
+          <Link href="/">link</Link>
         </Logo>
         <Navigation items={NAVIGATION_ITEMS} />
       </HeaderContainer>

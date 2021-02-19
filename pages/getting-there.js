@@ -9,7 +9,9 @@ import TextBar from '../components/textBar';
 import Collage from '../components/collage';
 import PageTitle from '../components/pageTitle';
 import Footer from '../components/footer';
-import { FlexContainer } from '../components/containers';
+import { FlexContainer, SpaceBetweenContainer } from '../components/containers';
+import Button from '../components/button';
+import Link from 'next/link';
 
 const MapContainer = styled(FlexContainer)`
   padding: 120px 0 160px;
@@ -19,11 +21,13 @@ const MapContainer = styled(FlexContainer)`
 const Map = styled.div`
   width: 100%;
   border: solid 1px #ccc;
-  height: 460px;
+  height: 560px;
   margin-bottom: 40px;
+  background: url('/map.png') no-repeat;
+  background-position: center;
 `;
 
-const MapText = styled(FlexContainer)`
+const MapText = styled(SpaceBetweenContainer)`
   width: 100%;
   border-bottom: solid 1px ${({ theme }) => theme.colors.greyLight};
   padding: 40px 0;
@@ -39,10 +43,10 @@ const Textblock = styled.div`
   p > b {
     font-family: futura-pt-bold;
   }
-  width: 37%;
+  width: 20%;
 
   :first-of-type {
-    width: 25%;
+    width: 40%;
   }
 `;
 
@@ -51,6 +55,17 @@ const Heading = styled.h5`
   font-family: futura-pt-bold;
   color: #ccc;
   margin-bottom: 5px;
+  text-transform: capitalize;
+`;
+
+const BookNow = styled(Button)`
+  margin-top: 20px;
+  width: 100%;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 `;
 
 export default function GettingThere() {
@@ -69,88 +84,87 @@ export default function GettingThere() {
         <Map />
         <MapText>
           <Textblock>
-            <Heading>Venue</Heading>
-            <p>
+            <Heading>{t('GETTING_THERE_VENUE_TEXT')}</Heading>
+            <p style={{ marginBottom: '10px' }}>
               <b>Marina Del Rey</b>
             </p>
-            <p>Address:1 Marina Dr. Bronx, NY 10465</p>
-            <p>Phone: xxx-xxx-xxxx</p>
-            <p>
-              Website: <a href="http://google.com">www.somewebstie.com</a>
+            <p>1 Marina Dr. Bronx, NY 10465</p>
+            <p>718-931-6500</p>
+            <p style={{ marginBottom: '20px' }}>
+              <a href="https://www.mdrnyc.com/" target="_blank">
+                www.mdrnyc.com
+              </a>
             </p>
-          </Textblock>
-          <Textblock>
-            <Heading>Travel Information</Heading>
-            <p>
-              Morbi eleifend pellentesque ornare. Pellentesque ut orci ornare
-              lectus malesuada semper eu ac diam. Donec id varius augue. Donec
-              aliquam auctor bibendum.
-            </p>
-          </Textblock>
-          <Textblock>
-            <Heading>Parking Detail</Heading>
-            <p>
-              Upon entering Marina Del Rey, parking attendants will assist you
-              with the convenience of complimentary valet parking.
-            </p>
+            <Heading>{t('GETTING_THERE_PARKING_TEXT')}</Heading>
+            <p>{t('GETTING_THERE_PARKING_DESC')}</p>
           </Textblock>
         </MapText>
 
         <MapText>
           <Textblock>
-            <Heading>Hotel</Heading>
-            <p>
-              <b>Option 1</b>
+            <Heading>{t('GETTING_THERE_ACCOMMODATIONS_TEXT')}</Heading>
+            <p
+              style={{
+                marginBottom: '40px',
+                fontSize: '18px',
+                lineHeight: '28px'
+              }}
+            >
+              {t('GETTING_THERE_ACCOMMODATIONS_DESC')}
             </p>
-            <p>Address:1 Marina Dr. Bronx, NY 10465</p>
-            <p>Phone: xxx-xxx-xxxx</p>
             <p>
-              Website: <a href="http://google.com">www.somewebstie.com</a>
-            </p>
-          </Textblock>
-          <Textblock>
-            <Heading>Travel Information</Heading>
-            <p>
-              Morbi eleifend pellentesque ornare. Pellentesque ut orci ornare
-              lectus malesuada semper eu ac diam. Donec id varius augue. Donec
-              aliquam auctor bibendum.
+              <em>{t('GETTING_THERE_ACCOMMODATIONS_NOTE')}</em>
             </p>
           </Textblock>
           <Textblock>
-            <Heading>Parking Detail</Heading>
-            <p>
-              Upon entering Marina Del Rey, parking attendants will assist you
-              with the convenience of complimentary valet parking.
+            <p style={{ marginBottom: '10px' }}>
+              <b>
+                Marriott Residence Inn New York
+                <br />
+                The Bronx at Metro Center Atrium
+              </b>
             </p>
-          </Textblock>
-        </MapText>
+            <p>
+              1776 Eastchester Road
+              <br />
+              Bronx, New York 10461
+              <br />
+              Group Name: Carrero-Green
+              <br />
+              <br />
+              <em style={{ fontSize: '11px', lineHeight: '12px' }}>
+                {t('GETTING_THERE_ACCOMMODATIONS_MARRIOTT')}
+              </em>
+            </p>
 
-        <MapText>
-          <Textblock>
-            <Heading>Hotel</Heading>
-            <p>
-              <b>Option 2</b>
-            </p>
-            <p>Address:1 Marina Dr. Bronx, NY 10465</p>
-            <p>Phone: xxx-xxx-xxxx</p>
-            <p>
-              Website: <a href="http://google.com">www.somewebstie.com</a>
-            </p>
+            <BookNow>
+              <Link href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1612807718740&key=GRP&app=resvlink">
+                {t('GETTING_THERE_ACCOMMODATIONS_CTA')}
+              </Link>
+            </BookNow>
           </Textblock>
           <Textblock>
-            <Heading>Travel Information</Heading>
-            <p>
-              Morbi eleifend pellentesque ornare. Pellentesque ut orci ornare
-              lectus malesuada semper eu ac diam. Donec id varius augue. Donec
-              aliquam auctor bibendum.
+            <p style={{ marginBottom: '10px' }}>
+              <b>Arthouse Hotel New York City</b>
             </p>
-          </Textblock>
-          <Textblock>
-            <Heading>Parking Detail</Heading>
             <p>
-              Upon entering Marina Del Rey, parking attendants will assist you
-              with the convenience of complimentary valet parking.
+              2178 Broadway at West 77th Street
+              <br />
+              New York, New York 10024
+              <br />
+              Group Name: Carrero-Green
+              <br />
+              <br />
+              <em style={{ fontSize: '11px', lineHeight: '12px' }}>
+                {t('GETTING_THERE_ACCOMMODATIONS_ARTHOUSE')}
+              </em>
             </p>
+
+            <BookNow>
+              <Link href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1612807718740&key=GRP&app=resvlink">
+                {t('GETTING_THERE_ACCOMMODATIONS_CTA')}
+              </Link>
+            </BookNow>
           </Textblock>
         </MapText>
       </MapContainer>

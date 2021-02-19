@@ -5,9 +5,11 @@ import { setLanguageCookie } from '../utils/language';
 import WithPageTitle from '../layouts/withPageTitle';
 import useTranslation from '../components/hooks/useTranslation';
 import { LanguageContext } from '../components/context/LanguageProvider';
-import TextBar from '../components/textBar';
-import PageTitle from '../components/pageTitle';
-import { OUR_STORY_QUESTIONS } from '../constants';
+import {
+  OVER_THE_YEARS,
+  OUR_STORY_INTRO,
+  OUR_STORY_QUESTIONS
+} from '../constants';
 import Question from '../components/question';
 import { FlexContainer } from '../components/containers';
 
@@ -38,6 +40,13 @@ const QuestionContainer = styled(FlexContainer)`
   }
 `;
 
+const QuestionIntro = styled.p`
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 100;
+`;
+
 const Questions = styled.div`
   border-left: solid 1px #fff;
   overflow-y: scroll;
@@ -55,6 +64,7 @@ const Questions = styled.div`
 const GramSection = styled.section`
   text-align: center;
   padding: 120px 0 180px;
+  background: #efefef;
 
   > h2 {
     margin-bottom: 40px;
@@ -63,13 +73,20 @@ const GramSection = styled.section`
 
 const Gram = styled.div`
   width: calc(${({ size }) => size}px - 2px);
-  height: calc(${({ size }) => size}px - 2px);
-  background: #fcfcfc url('${({ url }) => url}.png') no-repeat center;
-  background-size: ${({ size }) => size}px auto;
-  margin: 1px;
+  margin: 1px 1px 20px 1px;
 
   &:hover {
-    border: solid 1px #f2f2f2;
+  }
+  > div {
+    height: calc(${({ size }) => size}px - 2px);
+    background: #fcfcfc url('${({ url }) => url}.png') no-repeat center;
+    background-size: ${({ size }) => size}px auto;
+  }
+
+  > p {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px 0;
   }
 `;
 
@@ -88,7 +105,6 @@ export default function OurStory() {
       }
       setGram(containerSize / 3);
     } else {
-      console.log(viewport);
       setGram(viewport / 2);
     }
   };
@@ -120,6 +136,7 @@ export default function OurStory() {
         <BackgroundImage width={width}>
           <QuestionContainer>
             <Questions>
+              <QuestionIntro>{t(OUR_STORY_INTRO.key)}</QuestionIntro>
               {OUR_STORY_QUESTIONS.map((question) => (
                 <Question
                   key={question.key}
@@ -133,26 +150,80 @@ export default function OurStory() {
         </BackgroundImage>
       </Background>
       <GramSection>
-        <h2>Over the Years</h2>
+        <h2>{t(OVER_THE_YEARS.key)}</h2>
         <GramContainer>
-          <Gram size={gram} url="os_1" />
-          <Gram size={gram} url="os_2" />
-          <Gram size={gram} url="os_3" />
-          <Gram size={gram} url="os_4" />
-          <Gram size={gram} url="os_5" />
-          <Gram size={gram} url="os_6" />
-          <Gram size={gram} url="os_7" />
-          <Gram size={gram} url="os_8" />
-          <Gram size={gram} url="os_9" />
-          <Gram size={gram} url="os_10" />
-          <Gram size={gram} url="os_11" />
-          <Gram size={gram} url="os_12" />
-          <Gram size={gram} url="os_13" />
-          <Gram size={gram} url="os_14" />
-          <Gram size={gram} url="os_15" />
-          <Gram size={gram} url="os_16" />
-          <Gram size={gram} url="os_17" />
-          <Gram size={gram} url="os_18" />
+          <Gram size={gram} url="os_1">
+            <div />
+            <p>Pacha Nightclub for Francis' 21st Birthday, November 2009</p>
+          </Gram>
+          <Gram size={gram} url="os_2">
+            <div />
+            <p>Sam visiting Francis at Syracuse University, Spring 2009</p>
+          </Gram>
+          <Gram size={gram} url="os_3">
+            <div />
+            <p>Bowling @ New Roc City, December 2010</p>
+          </Gram>
+          <Gram size={gram} url="os_4">
+            <div />
+            <p>Birthday Party Pregame, November 2011</p>
+          </Gram>
+          <Gram size={gram} url="os_5">
+            <div />
+            <p>Out & About, March 2011</p>
+          </Gram>
+          <Gram size={gram} url="os_6">
+            <div />
+            <p>Princess and the Frog, Halloween 2012</p>
+          </Gram>
+          <Gram size={gram} url="os_7">
+            <div />
+            <p>Sam's Surprise 25th Birthday Party, March 2012</p>
+          </Gram>
+          <Gram size={gram} url="os_8">
+            <div />
+            <p>Storm and Jerome in the House, Halloween 2013</p>
+          </Gram>
+          <Gram size={gram} url="os_9">
+            <div />
+            <p>Rooftop Brunch Things, May 2014</p>
+          </Gram>
+          <Gram size={gram} url="os_10">
+            <div />
+            <p>ATV Riding in Florida, November 2015</p>
+          </Gram>
+          <Gram size={gram} url="os_11">
+            <div />
+            <p>Volcan Arenal in Costa Rica, December 2016</p>
+          </Gram>
+          <Gram size={gram} url="os_12">
+            <div />
+            <p>Kendrick Lamar Concert, July 2017.png</p>
+          </Gram>
+          <Gram size={gram} url="os_13">
+            <div />
+            <p>Elephant Sanctuary in Thailand, February 2018</p>
+          </Gram>
+          <Gram size={gram} url="os_14">
+            <div />
+            <p>Engagement Day, October 2018</p>
+          </Gram>
+          <Gram size={gram} url="os_15">
+            <div />
+            <p>Legends Suites at the Yankees Game, July 2018</p>
+          </Gram>
+          <Gram size={gram} url="os_16">
+            <div />
+            <p>Eiffel Tower in Paris, May 2019</p>
+          </Gram>
+          <Gram size={gram} url="os_17">
+            <div />
+            <p>Engagement Photos Behind the Scenes, August 2020</p>
+          </Gram>
+          <Gram size={gram} url="os_18">
+            <div />
+            <p>Marina Del Rey, Bronx NY, July 1st 2020</p>
+          </Gram>
         </GramContainer>
       </GramSection>
     </>

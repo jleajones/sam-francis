@@ -35,6 +35,7 @@ const Heading = styled.h3`
   // color: ${({ theme }) => theme.colors.accent};
   margin-bottom: 10px;
   letter-spacing: 3px;
+  text-transform: initial;
 `;
 
 const Description = styled.h2`
