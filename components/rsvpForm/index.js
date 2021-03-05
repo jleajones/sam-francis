@@ -1,0 +1,268 @@
+import { useState } from 'react';
+import useTranslation from '../hooks/useTranslation';
+import styled from 'styled-components';
+import Button from '../button';
+
+const InputsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+`;
+
+const Inputs = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    justify-content: space-between;
+  } ;
+`;
+
+const Input = styled.div`
+  flex-direction: column;
+  margin-bottom: 40px;
+  position: relative;
+
+  > label {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #999;
+  }
+
+  > input,
+  > textarea,
+  > select {
+    font-size: 32px;
+    font-family: 'futura-pt';
+    background: transparent;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  > input {
+    padding: 10px 0 0 10px;
+    line-height: 20px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+
+    @media (min-width: 1024px) {
+      width: calc(100% - 40px);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: ${({ theme }) => theme.colors.accent};
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  } ;
+`;
+
+const TextareaInput = styled(Input)`
+  display: block;
+  margin-top: 20px;
+  > p {
+    color: #999;
+  }
+  > textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    border: solid 1px #ccc;
+    line-height: 40px;
+    resize: none;
+    height: 240px;
+
+    &:hover,
+    &:focus {
+      border-color: ${({ theme }) => theme.colors.accent};
+    }
+  }
+`;
+
+export default function RsvpForm({ onSubmit }) {
+  const [fName, setFName] = useState('');
+  const [lName, setLName] = useState('');
+  const [email, setEmail] = useState('');
+  const [attendance, setAttendance] = useState('');
+
+  const [fName_g, setGFName] = useState('');
+  const [lName_g, setGLName] = useState('');
+  const [email_g, setGEmail] = useState('');
+  const [attendance_g, setGAttendance] = useState('');
+  const [msg, setMsg] = useState('');
+
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e) => {
+    setError('');
+    e.preventDefault();
+
+    if (!fName && !lName && !email && !attendance) {
+      setError(
+        'All fields are required. Please fill out the form and try to submit again, thanks!'
+      );
+      return;
+    }
+
+    if (!fName || !lName || !email || !attendance) {
+      setError(
+        'First name, last name, email, and RSVP status are required. Please check each field and try to submit again, thanks'
+      );
+
+      return;
+    }
+
+    const formData = {
+      name: `${fName} ${lName}`,
+      email,
+      rsvp: attendance,
+      guestName: `${fName_g} ${lName_g}`,
+      guestEmail: email_g,
+      guestRsvp: attendance_g,
+      message: msg
+    };
+    onSubmit(formData);
+  };
+
+  return (
+    <form id="form" onSubmit={handleSubmit}>
+      {error}
+      <InputsContainer>
+        <Inputs>
+          <Input>
+            <label htmlFor="firstName">first name</label>
+            <input
+              type="text"
+              id="firstName"
+              value={fName}
+              onChange={(e) => setFName(e.target.value)}
+            />
+          </Input>
+          <Input>
+            <label htmlFor="lastName">last name</label>
+            <input
+              type="text"
+              id="lastName"
+              value={lName}
+              onChange={(e) => setLName(e.target.value)}
+            />
+          </Input>
+          <Input>
+            <label htmlFor="email">email address</label>
+            <input
+              type="text"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Input>
+          <InputsContainer>
+            <Input style={{ marginRight: '30px' }}>
+              <label htmlFor="yes">
+                <input
+                  type="radio"
+                  id="yes"
+                  name="rsvp"
+                  value="yes"
+                  onChange={(e) => setAttendance(e.target.value)}
+                />{' '}
+                Yes, I'm in there!
+              </label>
+            </Input>
+            <Input>
+              <label htmlFor="no">
+                <input
+                  type="radio"
+                  id="no"
+                  name="rsvp"
+                  value="no"
+                  onChange={(e) => setAttendance(e.target.value)}
+                />{' '}
+                I'd love to be there, but I won't be able to make it.
+              </label>
+            </Input>
+          </InputsContainer>
+        </Inputs>
+
+        <Inputs>
+          <Input>
+            <label htmlFor="firstName_g">first name</label>
+            <input
+              type="text"
+              id="firstName_g"
+              value={fName_g}
+              onChange={(e) => setGFName(e.target.value)}
+            />
+          </Input>
+          <Input>
+            <label htmlFor="lastName_g">last name</label>
+            <input
+              type="text"
+              id="lastName_g"
+              value={lName_g}
+              onChange={(e) => setGLName(e.target.value)}
+            />
+          </Input>
+          <Input>
+            <label htmlFor="email_g">email address</label>
+            <input
+              type="text"
+              id="email_g"
+              value={email_g}
+              onChange={(e) => setGEmail(e.target.value)}
+            />
+          </Input>
+          <InputsContainer>
+            <Input style={{ marginRight: '30px' }}>
+              <label htmlFor="yes_g">
+                <input
+                  type="radio"
+                  id="yes_g"
+                  name="rsvp"
+                  value="yes"
+                  onChange={(e) => setGAttendance(e.target.value)}
+                />{' '}
+                Yes, I'm in there!
+              </label>
+            </Input>
+            <Input>
+              <label htmlFor="no_g">
+                <input
+                  type="radio"
+                  id="no_g"
+                  name="rsvp"
+                  value="no"
+                  onChange={(e) => setGAttendance(e.target.value)}
+                />{' '}
+                I'd love to be there, but I won't be able to make it.
+              </label>
+            </Input>
+          </InputsContainer>
+        </Inputs>
+      </InputsContainer>
+
+      <TextareaInput value={msg} onChange={(e) => setMsg(e.target.value)}>
+        <p>
+          Leave us a message, advice or any suggestions on fun and new things we
+          can do as we enter our marriage!
+        </p>
+        <textarea />
+      </TextareaInput>
+      <Input>
+        <label htmlFor="submit">
+          <Button id="submit">Submit</Button>
+        </label>
+      </Input>
+    </form>
+  );
+}

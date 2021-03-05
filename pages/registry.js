@@ -33,17 +33,8 @@ export default function Registry() {
           <h2>
             Celebrating with you on our special day is the only gift we require.
           </h2>
-          <p>
-            However, for your convenience, we have registered at [STORE NAMES]
-            for the items we’d find the most useful as we prepare for married
-            life! You can view the links below.
-          </p>
+          <p>Something about a house fund...</p>
         </TitleContainer>
-        <SpaceBetweenContainer>
-          <a href="http://goolg.com">Google</a>
-          <a href="http://goolg.com">Google</a>
-          <a href="http://goolg.com">Google</a>
-        </SpaceBetweenContainer>
       </section>
       {/*<Footer />*/}
       <Collage />

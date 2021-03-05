@@ -12,7 +12,7 @@ export default {
     es: 'página principal'
   },
   ARE_YOU_COMING_TITLE: {
-    en: 'are you coming?',
+    en: 'Are you coming?',
     es: 'MISSING!'
   },
   ARE_YOU_COMING_DESC: {
@@ -32,7 +32,7 @@ export default {
     en:
       'The sweetest love began with a Passion Fruit Iced Tea Lemonade. Sam and Francis regularly exchanged glances at Starbucks; one day, he wrote his number on a cup sleeve on her go-to order. From their first phone conversation, they’ve been talking, laughing and dancing ever since.',
     es:
-      'El amor más dulce comenzó con una orden de limonada de té helado de maracuyá (Passion Fruit Iced Tea Lemonade). Sam y Francis intercambiaron miradas regularmente en Starbucks; un día, él escribió su número en la manga de la taza de la orden de ella. Desde su primera conversación telefónica, ellos han estado hablando, riéndo se y bailando.'
+      'El amor más dulce comenzó con una orden de limonada de té helado con Chinola (Passion Fruit Iced Tea Lemonade). Sam y Francis intercambiaban miradas regularmente en Starbucks; un día, él escribió su número en la manga de la taza de la orden de ella. Desde su primera conversación por teléfono, ellos dos no han parado de hablar, bailar y reír. '
   },
   OUR_STORY_QUESTION1: {
     en: 'Where and how did you meet?',
@@ -42,13 +42,13 @@ export default {
     en:
       'My drink was on the table and, surprisingly, there was a cup sleeve on an iced drink. I just took my Passion Fruit Iced Tea Lemonade and went upstairs to my internship office. I was about to throw the cup sleeve in the trash, when I saw his name and number on it. I thought: <em>Oh my God, the guy from Starbucks!</em> And, I called him that night!',
     es:
-      'Mi bebida estaba en la mesa y, sorprendentemente, había una manga de taza en mi bebida helada. Tomé mi limonada de té helado de maracuyá y subí a la oficina. Estaba a punto de tirar la manga de la taza en la basura cuando vi su nombre y su número escrito en la manga. Pensé: <em>¡Oh Dios, el muchacho de Starbucks!</em> ¡Y lo llamé esa noche!\n'
+      'Mi bebida estaba en la mesa y, sorprendentemente, había una manga de taza en mi bebida helada. Tomé mi limonada de té helado con chinola y subí a la oficina. Estaba a punto de tirar la manga de la taza en la basura cuando vi su nombre y su número escrito en la manga. Pensé: ¡Oh Dios, el muchacho de Starbucks! ¡Y lo llamé esa noche!'
   },
   OUR_STORY_QUESTION1_GROOM: {
     en:
       "I was working at Starbucks and Francis would come in every day, and I actually got to know her drink order before I got to know her. One day, I looked up and, as I’m handing off the drink to her, I'm like, <em>You're the one that gets the Passion Fruit Iced Tea Lemonade.</em> She smiled, started blushing, and said yeeeea.",
     es:
-      'Estaba trabajando en Starbucks y Francis venía todos los días, y de hecho llegué a conocer su orden de bebida antes de conocerla. Un día, miré hacia arriba y, mientras le entregaba la bebida, le dije: Tú eres la que ordena la limonada de té helado de maracuyá (Passion Fruit Iced Tea Lemonade). Ella se sonrió, comenzó a sonrojarse, y dijo, siii.'
+      'Estaba trabajando en Starbucks y Francis pasaba todos los días, y de hecho llegué a conocer su orden de bebida antes de conocerla. Un día, miré hacia arriba y, mientras le entregaba la bebida, le dije: Tú eres la que ordena la limonada de té helado con chinola (Passion Fruit Iced Tea Lemonade). Ella se sonrió, comenzó a sonrojarse, y dijo, siii. '
   },
   OUR_STORY_QUESTION2: {
     en: 'How did you pop the question?',
@@ -56,10 +56,10 @@ export default {
   },
   OUR_STORY_QUESTION2_GROOM: {
     en:
-      'We had our first date at Bowlmor in Chelsea Piers, so that’s where I popped the question. We bowled for about 40 minutes. When Francis went to bowl, she was facing the lane and I signaled to the Bowlmor team. I told her to look up at the TV screens, which had the channel changed to a custom graphic saying “Will you marry me?” She couldn’t see it at first (she had something in her contacts) but when she did, she said, <em>Oh my God!</em> When she turned around, I was down on one knee.',
+      'We had our first date at Bowlmor in Chelsea Piers, so that’s where I popped the question. We bowled for about 40 minutes. When Francis went to bowl, she was facing the lane and I signaled to the Bowlmor team. I told her to look up at the TV screens, which had the channel changed to a custom graphic saying “Will you marry me?” She couldn’t see it at first (she had something in her contacts) but when she did, she said, <em>Oh my God!</em> When she turned around, I was down on one knee.<br/><br/>That night, when we got home, I had a surprise dinner set up with our family. The following day I took her to a concert with some of her favorite artists.',
 
     es:
-      'Tuvimos nuestra primera cita en Bowlmor en Chelsea Piers, así que ahí es donde le hice la pregunta. Estuvimos jugando por unos 40 minutos. Cuando Francis fue a jugar, estaba de cara al carril y le hice una señal al equipo de Bowlmor. Le dije que mirara las pantallas de televisión, que fueron reemplazadas de el canal a un gráfico personalizado que decía "¿Quieres casarte conmigo?" Ella no pudo verlo al principio (tenía algo en sus lentes de contacto) y luego dijo: <em>¡Dios mío!</em> Cuando se dio la vuelta, yo estaba arrodillado.\n'
+      'Tuvimos nuestra primera cita en Bowlmor en Chelsea Piers, por eso decidí pedirle la mano a ella en ese lugar. Estuvimos jugando por unos 40 minutos. Cuando Francis fue a jugar, estaba mirando el carril y le hice una señal al equipo de Bowlmor. Le dije que mirara las pantallas de televisión, que fueron reemplazadas con un gráfico personalizado que decía "¿Quieres casarte conmigo?" Ella no pudo verlo al principio (tenía algo en sus lentes de contacto) y luego dijo: <em>¡Dios mío!</em> Cuando se dio la vuelta, yo estaba arrodillado.<br/><br/>Esa noche, cuando llegamos a la casa, nuestra familia estaba de sorpresa, con una cena preparada para nosotros. El día siguiente, la lleve a un concierto con unos de sus artistas favoritos.'
   },
   OUR_STORY_QUESTION3: {
     en: 'What is your commitment to one another in this next chapter?',
@@ -70,7 +70,7 @@ export default {
       'As we evolve, grow, and become different versions of ourselves, that we work on continuing to understand each other. If we do that, the love is always going to be there. Humor is important to both of us. I also want us to continue laughing for the rest of our lives.',
 
     es:
-      'A medida que maduramos, crecemos y nos convertimos en diferentes versiones de nosotros mismos, que seguimos trabajando para continuar a entendernos. Si hacemos eso, el amor siempre estará ahí. El humor es importante para los dos. También quiero que sigamos riéndonos por el resto de nuestras vidas.'
+      'A medida que maduramos, crecemos y nos convertimos en diferentes versiones de nosotros mismos, tenemos que seguir trabajando en fortalecer nuestro entendimiento. Si hacemos eso, el amor siempre estará ahí. El humor es importante para los dos. También quiero que sigamos riéndonos por el resto de nuestras vidas.'
   },
   OUR_STORY_QUESTION3_GROOM: {
     en:
@@ -81,15 +81,227 @@ export default {
   },
   OVER_THE_YEARS: {
     en: 'Over the Years',
-    es: 'MISSING!!!'
+    es: 'A Través de los Años'
   },
   WEDDING_CYPHER_PAGE_TITLE: {
     en: 'wedding cypher',
-    es: 'wedding cypher'
+    es: 'corte de bodas'
   },
   WEDDING_CYPHER_NAV_TEXT: {
     en: 'wedding cypher',
-    es: 'wedding cypher'
+    es: 'corte de bodas'
+  },
+  PARENTS_TITLE: {
+    en: 'Meet the Parents',
+    es: 'Conozca a los Padres'
+  },
+  PARENTS_DESC: {
+    en:
+      'We want to thank our parents for their unconditional love and continuous support. ',
+    es:
+      'Queremos agradecer a nuestros padres por su amor incondicional y apoyo continuo.'
+  },
+  MOTHERS_TITLE: {
+    en: 'Mothers',
+    es: 'Madres'
+  },
+  MOTHER_3_QUOTE: {
+    en: 'R.I.P. July 8th, 1965 - September 15th, 1994',
+    es: 'Descansa en Paz July 8th, 1965 - September 15th, 1994'
+  },
+  FATHERS_TITLE: {
+    en: 'Fathers',
+    es: 'Padres'
+  },
+  BRIDESMAIDS_TITLE: {
+    en: 'Meet the Bridesmaids',
+    es: 'Conozca a las Damas de Honor'
+  },
+  BRIDESMAIDS_INTRO: {
+    en:
+      'Francis has built relationships with all these women at pivotal points in her life. They have contributed to her growth - from childhood to high school, college and the beginning of her career. She is excited and grateful that they are now a part of this journey!',
+    es:
+      'En momentos cruciales de su vida, Francis ha construido relaciones con todas estas mujeres. Desde la infancia a la secundaria y desde la universidad al comienzo de su carrera, ellas han contribuido a su crecimiento. ¡Ella está muy emocionada y agradecida de que ahora sean parte de este momento!'
+  },
+  BRIDESMAIDS_QUESTION: {
+    en: 'Name of lip color, if you had one?',
+    es: '¿Nombre de pinta labios si tuvieras uno?'
+  },
+  BRIDES_MAID_1_DESC: {
+    en: 'Creative',
+    es: 'Creativa'
+  },
+  BRIDES_MAID_1_QUOTE: {
+    en: 'Boss Swag - always making me feel like a bawse',
+    es: 'Estilo de Jefa - siempre haciéndome sentir como una jefa.'
+  },
+  BRIDES_MAID_2_DESC: {
+    en: 'Adventurous',
+    es: 'Aventurera'
+  },
+  BRIDES_MAID_2_QUOTE: {
+    en: 'Get it!!” That’s my motto!',
+    es: '¡Sólo consíguelo - es mi lema!'
+  },
+  BRIDES_MAID_3_DESC: {
+    en: 'Energetic',
+    es: 'Energética'
+  },
+  BRIDES_MAID_3_QUOTE: {
+    en: '“Lioness - to feel prideful, strong & beautiful.',
+    es: 'Leona - para sentirse orgullosa, fuerte y hermosa.'
+  },
+  BRIDES_MAID_4_DESC: {
+    en: 'Kind',
+    es: 'Amable'
+  },
+  BRIDES_MAID_4_QUOTE: {
+    en: 'Sunshine - I brighten up any look!” *hair flip*',
+    es: '¡Sol Brillante - Yo ilumino cualquier look!" *movimiento de cabello*'
+  },
+  BRIDES_MAID_5_DESC: {
+    en: 'Ever-Elusive',
+    es: 'Eternamente-Elusiva'
+  },
+  BRIDES_MAID_5_QUOTE: {
+    en: 'Mango Madness - to feel like I’m always on vacation',
+    es: 'Mango Madness - para sentir como que siempre estoy de vacaciones.'
+  },
+  BRIDES_MAID_6_DESC: {
+    en: 'Empathetic',
+    es: 'Empathetic'
+  },
+  BRIDES_MAID_6_QUOTE: {
+    en:
+      'Sophistiratchet - to never forget where I come from and work hard towards a better life.',
+    es:
+      'Sophistiratchet - para nunca olvidar de donde vengo y trabajar duro por una vida mejor'
+  },
+  BRIDES_MAID_7_DESC: {
+    en: 'Driven',
+    es: 'Impulsada'
+  },
+  BRIDES_MAID_7_QUOTE: {
+    en: 'Cherry Pop - the color red always pops when anyone wears it.',
+    es:
+      'Cherry Pop - el color rojo siempre surge cuando cualquier persona se lo pone.'
+  },
+  BRIDES_MAID_8_DESC: {
+    en: 'Thoughtful',
+    es: 'Considerada'
+  },
+  BRIDES_MAID_8_QUOTE: {
+    en:
+      'Ritual - my body care rituals help me get my mind right and make me feel good.',
+    es:
+      'Ritual - los rituales que uso para cuidar mi cuerpo aclaran mi mente y me hacen sentir bien.'
+  },
+  BRIDES_MAID_9_DESC: {
+    en: 'Faith-Driven',
+    es: 'Impulsada por Fe\n'
+  },
+  BRIDES_MAID_9_QUOTE: {
+    en:
+      'Tuesday Chardonnay - Celebrating natural beauty and simple sophistication.',
+    es:
+      'Martes de Chardonnay - Celebrando la belleza natural y la sofisticación simple.'
+  },
+  BRIDES_MAID_10_DESC: {
+    en: 'Eclectic',
+    es: 'Ecléctica'
+  },
+  BRIDES_MAID_10_QUOTE: {
+    en: 'Warrior Red - to prepare me to beat any challenge with style.',
+    es:
+      'Guerrera Roja - para prepararme a superar cualquier desafío con estilo.'
+  },
+  GROOMSMEN_TITLE: {
+    en: 'Meet the Groomsmen',
+    es: 'Conozca a los Caballeros de Boda'
+  },
+  GROOMSMEN_INTRO: {
+    en:
+      'Each one of these men has directly and indirectly impacted Sam’s life in a great way. He is honored to have them join him on the most important day of my life. ',
+    es:
+      'Cada uno de estos hombres han impactado la vida de Sam, directamente e indirectamente, de una gran manera. Es un honor tener los unidos para el día más importante de su vida.'
+  },
+  GROOMSMEN_QUESTION: {
+    en: 'If you weren’t doing what you do now...',
+    es: 'Si no estuvieras haciendo lo que haces ahora...'
+  },
+  GROOMSMEN_1_DESC: {
+    en: 'Creative',
+    es: 'Creativo'
+  },
+  GROOMSMEN_1_QUOTE: {
+    en: 'I’d be a boxer or mixed martial artist.',
+    es: 'Sería un boxeador un artista de marcial mixto.'
+  },
+  GROOMSMEN_2_DESC: {
+    en: 'Outgoing',
+    es: 'Saliente'
+  },
+  GROOMSMEN_2_QUOTE: {
+    en: 'I’d want to own a department store.',
+    es: 'Me gustaría tener una tienda por departamentos.'
+  },
+  GROOMSMEN_3_DESC: {
+    en: 'Adventurous',
+    es: 'Aventurero'
+  },
+  GROOMSMEN_3_QUOTE: {
+    en: 'I’d be a pilot',
+    es: 'Sería un piloto.'
+  },
+  GROOMSMEN_4_DESC: {
+    en: 'Ambitious',
+    es: 'Ambicioso'
+  },
+  GROOMSMEN_4_QUOTE: {
+    en: 'I’d be in film production and acting.',
+    es: 'Estaría en producción de películas y actuando.'
+  },
+  GROOMSMEN_5_DESC: {
+    en: 'Committed',
+    es: 'Comprometido'
+  },
+  GROOMSMEN_5_QUOTE: {
+    en: 'I’d be the main video editor for a TV show or a movie.',
+    es:
+      'Sería el editor de video principal para un programa de televisión o una película.'
+  },
+  GROOMSMEN_6_DESC: {
+    en: 'Dedicated',
+    es: 'Dedicado'
+  },
+  GROOMSMEN_6_QUOTE: {
+    en:
+      'I’d be a digital nomad. I would love to work remotely from different countries.',
+    es: 'Sería un nómad digital. Me gustaría trabajar desde diferentes países.'
+  },
+  GROOMSMEN_7_DESC: {
+    en: 'Witty',
+    es: 'Ingenioso'
+  },
+  GROOMSMEN_7_QUOTE: {
+    en: 'I’d be a Travel Blogger.',
+    es: 'Sería un bloguero de viajes.'
+  },
+  GROOMSMEN_8_DESC: {
+    en: 'Implicit',
+    es: 'Implícito'
+  },
+  GROOMSMEN_8_QUOTE: {
+    en: 'I’d be an A&R for an up and coming Hip Hop/Urban artist.',
+    es: 'Sería un A&R para un artista emergente de Hip Hop / Urban.'
+  },
+  GROOMSMEN_9_DESC: {
+    en: 'Positive',
+    es: 'Positivo'
+  },
+  GROOMSMEN_9_QUOTE: {
+    en: 'I’d be in music production.',
+    es: 'Sería un productor musical.'
   },
   GETTING_THERE_PAGE_TITLE: {
     en: 'getting there',
@@ -101,11 +313,11 @@ export default {
   },
   GETTING_THERE_VENUE_TEXT: {
     en: 'venue',
-    es: 'MISSING'
+    es: 'lugar de boda'
   },
   GETTING_THERE_PARKING_TEXT: {
     en: 'parking detail',
-    es: 'MISSING'
+    es: 'servicio de parqueo'
   },
   GETTING_THERE_PARKING_DESC: {
     en:
@@ -115,7 +327,7 @@ export default {
   },
   GETTING_THERE_ACCOMMODATIONS_TEXT: {
     en: 'Accommodations',
-    es: 'MISSING'
+    es: 'alojamientos'
   },
   GETTING_THERE_ACCOMMODATIONS_DESC: {
     en:
@@ -167,13 +379,13 @@ export default {
     en: 'July 1st, 2021<br/>5:15PM',
     es: '1ero de Julio 2021<br/>5:15PM'
   },
-  VENUE_TITLE: { en: 'venue', es: '' },
+  VENUE_TITLE: { en: 'venue', es: 'lugar' },
   VENUE_HEADING: { en: 'MARINA DEL REY' },
   VENUE_DESCRIPTION: {
     en: '1 marina dr.<br/>bronx, NY 10465'
   },
-  DRESS_CODE_TITLE: { en: 'dress code', es: '' },
-  DRESS_CODE_HEADING: { en: 'CHIC FORMAL' },
+  DRESS_CODE_TITLE: { en: 'dress code', es: 'código de vestir' },
+  DRESS_CODE_HEADING: { en: 'CHIC FORMAL', es: 'DE MODA FORMAL' },
   DRESS_CODE_DESCRIPTION: {
     en: "please don't wear, white,<br />gold, or all black",
     es: 'POR FAVOR NO SE VISTA<br />DE BLANCO, ORO O NEGRO ENTERO'
@@ -182,6 +394,6 @@ export default {
   HASHTAG_HEADING: { en: '#WeGotTheGreenLight' },
   HASHTAG_DESCRIPTION: {
     en: 'tag all the fun - use our<br/>tag on all platforms!',
-    es: ''
+    es: '¡MARQUE TODAS LA DIVERSIÓN<br/>EN LAS REDES SOCIALES!'
   }
 };

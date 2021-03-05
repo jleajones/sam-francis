@@ -119,9 +119,7 @@ export default function GettingThere() {
           <Textblock>
             <p style={{ marginBottom: '10px' }}>
               <b>
-                Marriott Residence Inn New York
-                <br />
-                The Bronx at Metro Center Atrium
+                Marriott Residence Inn New York The Bronx at Metro Center Atrium
               </b>
             </p>
             <p>
@@ -161,7 +159,7 @@ export default function GettingThere() {
             </p>
 
             <BookNow>
-              <Link href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1612807718740&key=GRP&app=resvlink">
+              <Link href="https://reservations.travelclick.com/111046?groupID=3202106#/guestsandrooms">
                 {t('GETTING_THERE_ACCOMMODATIONS_CTA')}
               </Link>
             </BookNow>

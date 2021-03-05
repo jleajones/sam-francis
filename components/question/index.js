@@ -46,16 +46,16 @@ export default function Question({ questionKey, brideKey, groomKey }) {
       <QuestionText>
         <span>Q:</span> {t(questionKey)}
       </QuestionText>
-      {brideKey && (
-        <Answer>
-          <Name>Francis:</Name>
-          <p dangerouslySetInnerHTML={{ __html: t(brideKey) }} />
-        </Answer>
-      )}
       {groomKey && (
         <Answer>
           <Name>Sam:</Name>
           <p dangerouslySetInnerHTML={{ __html: t(groomKey) }} />
+        </Answer>
+      )}
+      {brideKey && (
+        <Answer>
+          <Name>Francis:</Name>
+          <p dangerouslySetInnerHTML={{ __html: t(brideKey) }} />
         </Answer>
       )}
     </StyledQuestion>

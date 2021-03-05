@@ -17,6 +17,8 @@ const Person = styled.div`
 const PersonImage = styled.div`
   margin: 0 auto;
   background: #ccc;
+  background-image: ${({ img }) => `url('/cypher/${img}.png')`};
+  background-position: center;
   border-radius: 50%;
   height: 320px;
   width: 320px;
@@ -26,6 +28,9 @@ const PersonImage = styled.div`
 
 const Name = styled.p`
   text-align: center;
+  > span {
+    color: ${({ theme }) => theme.colors.accentDark};
+  }
 `;
 
 const Title = styled.p`
@@ -50,13 +55,13 @@ const Answer = styled.p`
 const Overlay = styled.div`
   position: relative;
   top: 60%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.6);
   height: 100%;
   padding: 20px 0 0 0;
   display: ${({ show }) => (show ? `block` : `none`)};
 `;
 
-export default function People({ people }) {
+export default function People({ people, question }) {
   return (
     <PeopleContainer>
       {people.map((person) => {
@@ -70,13 +75,17 @@ export default function People({ people }) {
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >
-            <PersonImage>
-              <Overlay show={show}>
-                <Question>{person.question}</Question>
-                <Answer>{person.answer}</Answer>
-              </Overlay>
+            <PersonImage img={person.img}>
+              {question && (
+                <Overlay show={show}>
+                  <Question>{question}</Question>
+                  <Answer>{person.answer}</Answer>
+                </Overlay>
+              )}
             </PersonImage>
-            <Name>{person.name}</Name>
+            <Name>
+              <span>{person.desc}</span> {person.name}
+            </Name>
             <Title>{person.title}</Title>
           </Person>
         );

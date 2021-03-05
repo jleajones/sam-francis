@@ -11,171 +11,22 @@ import { Container } from '../components/containers';
 import styled from 'styled-components';
 import People from '../components/people';
 
-const BRIDES_QUESTION = 'Name of lip color, if you had one?';
-
-const bridesmaids = [
-  {
-    name: 'Janel Martinez',
-    title: 'Maid of Honor',
-    question: BRIDES_QUESTION,
-    answer: 'Boss Swag - always making me feel like a bawse.'
-  },
-  {
-    name: 'Tasha Brown',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer: "Get it! It's my motto for 2020!"
-  },
-  {
-    name: 'Claudia Carrero',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer: 'Lioness - to feel prideful, strong, and beautiful.'
-  },
-  {
-    name: 'Elizabeth Carrero',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer: 'Sunshine - I brighten up any look! 💁🏽‍♀️'
-  },
-  {
-    name: 'Danielle Lea-Jones',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer: "Mango Madness - to feel like I'm always on vacation."
-  },
-  {
-    name: 'Yunilda Perez',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer:
-      'Sophistiratchet - to never forget where I come from and work hard towards a better life.'
-  },
-  {
-    name: 'Christal Pickett',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer: 'Cherry Pop - the color red always pops when anyone wears it.'
-  },
-  {
-    name: 'Chantel Santos',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer:
-      'Ritual - my body care rituals help me get my mind right and make me feel good.'
-  },
-  {
-    name: 'Timeka Tounsel',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer:
-      'Tuesday Chardonnay - Celebrating natural beauty and simple sophistication.'
-  },
-  {
-    name: 'Jennifer Vasquez',
-    title: 'Bridesmaid',
-    question: BRIDES_QUESTION,
-    answer: 'Warrior Red - to prepare me to beat any challenge with style.'
-  }
-];
-
-const GROOMS_QUESTION = "If you weren't doing what you do now...";
-
-const groomsmen = [
-  {
-    name: 'Calvin Wilson',
-    title: 'Best Man',
-    question: GROOMS_QUESTION,
-    answer: "I'd want to own a department store."
-  },
-  {
-    name: 'Daniel “Danny” Lauria',
-    title: 'Best Man',
-    question: GROOMS_QUESTION,
-    answer: "I'd be a boxer or mixed martial artist."
-  },
-  {
-    name: 'King Alexzander',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be a pilot."
-  },
-  {
-    name: 'Duke Isaac',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be a pilot."
-  },
-  {
-    name: 'Jonathan “JO” Olivo',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be the main video editor for a TV show or movie."
-  },
-  {
-    name: 'Sean Pickett',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer:
-      "I'd be a digital nomad. I would love to work remotely from different countries."
-  },
-  {
-    name: 'Luis Pinzon',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be a travel blogger."
-  },
-  {
-    name: 'Leon Wilson',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be an A&R for an up and coming Hip Hop/Urban artist."
-  },
-  {
-    name: 'Curtis Yarborough',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be in music production."
-  }
-];
-
-const mothers = [
-  {
-    name: 'Sean Pickett',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer:
-      "I'd be a digital nomad. I would love to work remotely from different countries."
-  },
-  {
-    name: 'Luis Pinzon',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be a travel blogger."
-  },
-  {
-    name: 'Leon Wilson',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be an A&R for an up and coming Hip Hop/Urban artist."
-  }
-];
-
-const fathers = [
-  {
-    name: 'Sean Pickett',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer:
-      "I'd be a digital nomad. I would love to work remotely from different countries."
-  },
-  {
-    name: 'Luis Pinzon',
-    title: 'Groomsman',
-    question: GROOMS_QUESTION,
-    answer: "I'd be a travel blogger."
-  }
-];
+import {
+  BRIDESMAIDS_TITLE,
+  BRIDESMAIDS_INTRO,
+  BRIDESMAIDS_QUESTION,
+  BRIDESMAIDS,
+  GROOMSMEN_TITLE,
+  GROOMSMEN_INTRO,
+  GROOMSMEN_QUESTION,
+  GROOMSMEN,
+  PARENTS_TITLE,
+  PARENTS_DESC,
+  MOTHERS_TITLE,
+  FATHERS_TITLE,
+  MOTHERS,
+  FATHERS
+} from '../constants/index';
 
 const Background = styled.section`
   background: linear-gradient(to bottom, #fff9e7 0, #fff 100%);
@@ -199,34 +50,53 @@ export default function WeddingCypher() {
       </Head>
       <Background>
         <TitleContainer>
-          <h2>Meet the Bridesmaids</h2>
-          <p>
-            Some text about how important these women might be to me...or not.
-            haha!
+          <h2>{t(PARENTS_TITLE.key)}</h2>
+          <p>{t(PARENTS_DESC.key)}</p>
+        </TitleContainer>
+
+        <TitleContainer>
+          <h2>{t(MOTHERS_TITLE.key)}</h2>
+        </TitleContainer>
+        <People
+          people={MOTHERS.map((m) => ({
+            ...m,
+            title: m.title && t(m.title)
+          }))}
+        />
+
+        <TitleContainer>
+          <h2>{t(FATHERS_TITLE.key)}</h2>
+        </TitleContainer>
+        <People people={FATHERS} />
+        <TitleContainer>
+          <h2>{t(BRIDESMAIDS_TITLE.key)}</h2>
+          <p style={{ width: '80%', margin: '0 auto' }}>
+            {t(BRIDESMAIDS_INTRO.key)}
           </p>
         </TitleContainer>
-        <People people={bridesmaids} />
+        <People
+          people={BRIDESMAIDS.map((bm) => ({
+            ...bm,
+            answer: t(bm.answer),
+            desc: t(bm.desc)
+          }))}
+          question={t(BRIDESMAIDS_QUESTION.key)}
+        />
 
         <TitleContainer>
-          <h2>Meet the Groomsmen</h2>
-          <p>
-            Some text about how important these men might be to me...or not.
-            haha!
+          <h2>{t(GROOMSMEN_TITLE.key)}</h2>
+          <p style={{ width: '80%', margin: '0 auto' }}>
+            {t(GROOMSMEN_INTRO.key)}
           </p>
         </TitleContainer>
-        <People people={groomsmen} />
-
-        <TitleContainer>
-          <h2>Meet the Mothers</h2>
-          <p>Some text about the mothers...or maybe not. haha!</p>
-        </TitleContainer>
-        <People people={mothers} />
-
-        <TitleContainer>
-          <h2>Meet the Fathers</h2>
-          <p>Some text about the fathers...or maybe not. haha!</p>
-        </TitleContainer>
-        <People people={fathers} />
+        <People
+          people={GROOMSMEN.map((gm) => ({
+            ...gm,
+            answer: t(gm.answer),
+            desc: t(gm.desc)
+          }))}
+          question={t(GROOMSMEN_QUESTION.key)}
+        />
       </Background>
 
       {/*<Collage />*/}

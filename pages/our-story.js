@@ -34,6 +34,12 @@ const GramContainer = styled(FlexContainer)`
   flex-direction: row;
 `;
 
+const GramText = styled.span`
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+`;
+
 const QuestionContainer = styled(FlexContainer)`
   @media (min-width: 1024px) {
     justify-content: flex-end;
@@ -154,75 +160,119 @@ export default function OurStory() {
         <GramContainer>
           <Gram size={gram} url="os_1">
             <div />
-            <p>Pacha Nightclub for Francis' 21st Birthday, November 2009</p>
+            <p>
+              <GramText>
+                Pacha Nightclub for Francis' 21st Birthday, November 2009
+              </GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_2">
             <div />
-            <p>Sam visiting Francis at Syracuse University, Spring 2009</p>
+            <p>
+              <GramText>
+                Sam visiting Francis at Syracuse University, Spring 2009
+              </GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_3">
             <div />
-            <p>Bowling @ New Roc City, December 2010</p>
+            <p>
+              <GramText>Bowling @ New Roc City, December 2010</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_4">
             <div />
-            <p>Birthday Party Pregame, November 2011</p>
+            <p>
+              <GramText>Birthday Party Pregame, November 2011</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_5">
             <div />
-            <p>Out & About, March 2011</p>
+            <p>
+              <GramText>Out & About, March 2011</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_6">
             <div />
-            <p>Princess and the Frog, Halloween 2012</p>
+            <p>
+              <GramText>Princess and the Frog, Halloween 2012</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_7">
             <div />
-            <p>Sam's Surprise 25th Birthday Party, March 2012</p>
+            <p>
+              <GramText>
+                Sam's Surprise 25th Birthday Party, March 2012
+              </GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_8">
             <div />
-            <p>Storm and Jerome in the House, Halloween 2013</p>
+            <p>
+              <GramText>Storm and Jerome in the House, Halloween 2013</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_9">
             <div />
-            <p>Rooftop Brunch Things, May 2014</p>
+            <p>
+              <GramText>Rooftop Brunch Things, May 2014</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_10">
             <div />
-            <p>ATV Riding in Florida, November 2015</p>
+            <p>
+              <GramText>ATV Riding in Florida, November 2015</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_11">
             <div />
-            <p>Volcan Arenal in Costa Rica, December 2016</p>
+            <p>
+              <GramText>Volcan Arenal in Costa Rica, December 2016</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_12">
             <div />
-            <p>Kendrick Lamar Concert, July 2017.png</p>
+            <p>
+              <GramText>Kendrick Lamar Concert, July 2017</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_13">
             <div />
-            <p>Elephant Sanctuary in Thailand, February 2018</p>
+            <p>
+              <GramText>Elephant Sanctuary in Thailand, February 2018</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_14">
             <div />
-            <p>Engagement Day, October 2018</p>
+            <p>
+              <GramText>Engagement Day, October 2018</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_15">
             <div />
-            <p>Legends Suites at the Yankees Game, July 2018</p>
+            <p>
+              <GramText>Legends Suites at the Yankees Game, July 2018</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_16">
             <div />
-            <p>Eiffel Tower in Paris, May 2019</p>
+            <p>
+              <GramText>Eiffel Tower in Paris, May 2019</GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_17">
             <div />
-            <p>Engagement Photos Behind the Scenes, August 2020</p>
+            <p>
+              <GramText>
+                Engagement Photos Behind the Scenes, August 2020
+              </GramText>
+            </p>
           </Gram>
           <Gram size={gram} url="os_18">
             <div />
-            <p>Marina Del Rey, Bronx NY, July 1st 2020</p>
+            <p>
+              <GramText>Marina Del Rey, Bronx NY, July 1st 2020</GramText>
+            </p>
           </Gram>
         </GramContainer>
       </GramSection>
