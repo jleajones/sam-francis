@@ -16,6 +16,13 @@ import {
 } from '../components/containers';
 import Button from '../components/button';
 import Footer from '../components/footer';
+import {
+  RSVP_BUTTON_TITLE,
+  RSVP_COVID,
+  RSVP_HERO_TITLE,
+  RSVP_INTRO,
+  RSVP_INTRUCTIONS
+} from '../constants';
 
 const Form = styled(Container)`
   padding: 120px 0 160px;
@@ -45,24 +52,20 @@ export default function Rsvp() {
         <title>{pageTitle}</title>
       </Head>
       <HeroWithText
-        title="<span>Are you coming?</span>"
+        title={`<span>${t(RSVP_HERO_TITLE.key)}</span>`}
         onClick={() => {
           document.getElementById('form').scrollIntoView({
             behavior: 'smooth'
           });
         }}
-        cta="RSVP"
+        cta={t(RSVP_BUTTON_TITLE.key)}
         message="<span>MARINA DEL REY</span><br/>JULY 1ST, 2021 at 5:15PM"
         bgImage={'rsvp_bg.png'}
       />
       <Form>
-        <h2 style={{ marginBottom: '20px' }}>
-          Please confirm your presence by May 1st, 2021
-        </h2>
+        <h2 style={{ marginBottom: '20px' }}>{t(RSVP_INTRO.key)}</h2>
         <p style={{ marginBottom: '40px', width: '80%' }}>
-          Due to restrictions, we ask that you please only RSVP for yourself and
-          if there is another person listed on your invitation. Please note,
-          invitations are for 21 and over. Many thanks for your understanding.
+          {t(RSVP_INTRUCTIONS.key)}
         </p>
         <p
           style={{
@@ -75,18 +78,16 @@ export default function Rsvp() {
             display: 'flex',
             justifyContent: 'flex-end',
             flexDirection: 'row',
-            alignItems: 'center'
+            alignItems: 'flex-start'
           }}
         >
           <span style={{ marginRight: '12px', color: '#fff' }}>
             <img src="/info-24px.svg" />
           </span>
-          <em style={{ flexGrow: 2 }}>
-            Due to COVID-19 and the current social unrest in the world, we ask
-            that you please be patient and flexible with us. If there are any
-            changes to the wedding date or details, we will be sure to
-            communicate this with you as soon as possible. Thank you!.
-          </em>
+          <em
+            style={{ flexGrow: 2 }}
+            dangerouslySetInnerHTML={{ __html: t(RSVP_COVID.key) }}
+          />
         </p>
         <RsvpForm onSubmit={onSubmit} />
 

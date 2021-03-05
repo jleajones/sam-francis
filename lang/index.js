@@ -365,6 +365,56 @@ export default {
     en: 'RSVP',
     es: 'RSVP'
   },
+  RSVP_HERO_TITLE: {
+    en: 'Are you coming?',
+    es: 'missing!!!'
+  },
+  RSVP_BUTTON_TITLE: {
+    en: 'RSVP',
+    es: 'CONFIRME SU PRESENCIA'
+  },
+  RSVP_INTRO: {
+    en: 'Please confirm your presence by May 1st, 2021.',
+    es: 'Por favor confirme su presencia antes del 1ero de Mayo 2021.'
+  },
+  RSVP_INTRUCTIONS: {
+    en:
+      'Due to restrictions, we ask that you please only RSVP for yourself and if there is another person listed on your invitation. Please note, invitations are for 21 and over. Many thanks for your understanding. ',
+    es:
+      'Debido a restricciones, le pedimos que por favor solo confirme su presencia y si hay otra persona en su invitación. Tenga en cuenta que las invitaciones son para mayores de 21 años. Muchas gracias por su comprensión.'
+  },
+  RSVP_COVID: {
+    en:
+      'Due to COVID-19, we ask that you please be patient and flexible with us.<br/><br/><b>Please note, New York State regulations are allowing wedding celebrations provided that everyone on site has proof of a negative COVID-19 test taken within 48-72 hours prior. You will have to show proof of a negative COVID-19 test on printed paper or on your mobile device upon arrival to Marina Del Rey.</b><br/><br/>We apologize for any inconveniences but thank you for your cooperation and understanding',
+    es:
+      'Debido a el COVID-19, le pedimos que por favor sea paciente y flexible con nosotros.<br/><br/><b>Por favor, tenga en cuenta que las regulaciones del estado de Nueva York permiten celebraciones de bodas en el lugar que todos los invitados tengan una prueba negativa de COVID-19 tomada dentro de las 48-72 horas anteriores. Cuando llegue a Marina Del Rey, tiene que mostrar una prueba negativa de COVID-19 en papel del médico o de donde se hizo la prueba, o en su teléfono celular.</b><br/><br/>Le pedimos disculpas por cualquier inconveniente y le damos las gracias por su cooperación y comprensión.'
+  },
+  RSVP_FNAME: {
+    en: 'first name',
+    es: 'Primer nombre'
+  },
+  RSVP_LNAME: {
+    en: 'last name',
+    es: 'Apellido'
+  },
+  RSVP_EMAIL: {
+    en: 'email address',
+    es: 'correo electrónico'
+  },
+  RSVP_YES: {
+    en: " Yes, I'm in there! ",
+    es: '¡Sí, estoy ahí!'
+  },
+  RSVP_NO: {
+    en: "I'd love to be there, but I won't be able to make it.",
+    es: 'Me encantaría estar allí, pero no podré asistir.'
+  },
+  RSVP_MSG: {
+    en:
+      'Leave us a message, advice or any suggestions on fun and new things we can do as we enter our marriage!',
+    es:
+      '¡Déjenos un mensaje, consejo o cualquier sugerencia sobre cosas nuevas y divertidas que podemos hacer al entrar en nuestro matrimonio!'
+  },
   REGISTRY_PAGE_TITLE: {
     en: 'registry',
     es: 'registro'

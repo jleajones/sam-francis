@@ -217,6 +217,41 @@ export const GROOMSMEN_8_QUOTE = { key: 'GROOMSMEN_8_QUOTE' };
 export const GROOMSMEN_9_DESC = { key: 'GROOMSMEN_9_DESC' };
 export const GROOMSMEN_9_QUOTE = { key: 'GROOMSMEN_9_QUOTE' };
 
+export const RSVP_HERO_TITLE = {
+  key: 'RSVP_HERO_TITLE'
+};
+
+export const RSVP_BUTTON_TITLE = {
+  key: 'RSVP_BUTTON_TITLE'
+};
+export const RSVP_INTRO = {
+  key: 'RSVP_INTRO'
+};
+export const RSVP_INTRUCTIONS = {
+  key: 'RSVP_INTRUCTIONS'
+};
+export const RSVP_COVID = {
+  key: 'RSVP_COVID'
+};
+export const RSVP_FNAME = {
+  key: 'RSVP_FNAME'
+};
+export const RSVP_LNAME = {
+  key: 'RSVP_LNAME'
+};
+export const RSVP_EMAIL = {
+  key: 'RSVP_EMAIL'
+};
+export const RSVP_YES = {
+  key: 'RSVP_YES'
+};
+export const RSVP_NO = {
+  key: 'RSVP_NO'
+};
+export const RSVP_MSG = {
+  key: 'RSVP_MSG'
+};
+
 export const MOTHERS = [
   {
     name: 'Celeste E. Stapleton de Carrero'

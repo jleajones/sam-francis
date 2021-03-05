@@ -1,7 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useContext, useState } from 'react';
 import useTranslation from '../hooks/useTranslation';
 import styled from 'styled-components';
 import Button from '../button';
+import { LanguageContext } from '../context/LanguageProvider';
+import { setLanguageCookie } from '../../utils/language';
+import {
+  RSVP_BUTTON_TITLE,
+  RSVP_EMAIL,
+  RSVP_FNAME,
+  RSVP_LNAME,
+  RSVP_MSG,
+  RSVP_NO,
+  RSVP_YES
+} from '../../constants';
 
 const InputsContainer = styled.div`
   display: flex;
@@ -90,6 +101,11 @@ const TextareaInput = styled(Input)`
 `;
 
 export default function RsvpForm({ onSubmit }) {
+  const { t } = useTranslation();
+  const [locale] = useContext(LanguageContext);
+  useEffect(() => {
+    setLanguageCookie(null, locale);
+  }, []);
   const [fName, setFName] = useState('');
   const [lName, setLName] = useState('');
   const [email, setEmail] = useState('');
@@ -140,7 +156,7 @@ export default function RsvpForm({ onSubmit }) {
       <InputsContainer>
         <Inputs>
           <Input>
-            <label htmlFor="firstName">first name</label>
+            <label htmlFor="firstName">{t(RSVP_FNAME.key)}</label>
             <input
               type="text"
               id="firstName"
@@ -149,7 +165,7 @@ export default function RsvpForm({ onSubmit }) {
             />
           </Input>
           <Input>
-            <label htmlFor="lastName">last name</label>
+            <label htmlFor="lastName">{t(RSVP_LNAME.key)}</label>
             <input
               type="text"
               id="lastName"
@@ -158,7 +174,7 @@ export default function RsvpForm({ onSubmit }) {
             />
           </Input>
           <Input>
-            <label htmlFor="email">email address</label>
+            <label htmlFor="email">{t(RSVP_EMAIL.key)}</label>
             <input
               type="text"
               id="email"
@@ -175,8 +191,8 @@ export default function RsvpForm({ onSubmit }) {
                   name="rsvp"
                   value="yes"
                   onChange={(e) => setAttendance(e.target.value)}
-                />{' '}
-                Yes, I'm in there!
+                />
+                {t(RSVP_YES.key)}
               </label>
             </Input>
             <Input>
@@ -187,8 +203,8 @@ export default function RsvpForm({ onSubmit }) {
                   name="rsvp"
                   value="no"
                   onChange={(e) => setAttendance(e.target.value)}
-                />{' '}
-                I'd love to be there, but I won't be able to make it.
+                />
+                {t(RSVP_NO.key)}
               </label>
             </Input>
           </InputsContainer>
@@ -196,7 +212,7 @@ export default function RsvpForm({ onSubmit }) {
 
         <Inputs>
           <Input>
-            <label htmlFor="firstName_g">first name</label>
+            <label htmlFor="firstName_g">{t(RSVP_FNAME.key)}</label>
             <input
               type="text"
               id="firstName_g"
@@ -205,7 +221,7 @@ export default function RsvpForm({ onSubmit }) {
             />
           </Input>
           <Input>
-            <label htmlFor="lastName_g">last name</label>
+            <label htmlFor="lastName_g">{t(RSVP_LNAME.key)}</label>
             <input
               type="text"
               id="lastName_g"
@@ -214,7 +230,7 @@ export default function RsvpForm({ onSubmit }) {
             />
           </Input>
           <Input>
-            <label htmlFor="email_g">email address</label>
+            <label htmlFor="email_g">{t(RSVP_EMAIL.key)}</label>
             <input
               type="text"
               id="email_g"
@@ -231,8 +247,8 @@ export default function RsvpForm({ onSubmit }) {
                   name="rsvp"
                   value="yes"
                   onChange={(e) => setGAttendance(e.target.value)}
-                />{' '}
-                Yes, I'm in there!
+                />
+                {t(RSVP_YES.key)}
               </label>
             </Input>
             <Input>
@@ -243,8 +259,8 @@ export default function RsvpForm({ onSubmit }) {
                   name="rsvp"
                   value="no"
                   onChange={(e) => setGAttendance(e.target.value)}
-                />{' '}
-                I'd love to be there, but I won't be able to make it.
+                />
+                {t(RSVP_NO.key)}
               </label>
             </Input>
           </InputsContainer>
@@ -252,15 +268,12 @@ export default function RsvpForm({ onSubmit }) {
       </InputsContainer>
 
       <TextareaInput value={msg} onChange={(e) => setMsg(e.target.value)}>
-        <p>
-          Leave us a message, advice or any suggestions on fun and new things we
-          can do as we enter our marriage!
-        </p>
+        <p>{t(RSVP_MSG.key)}</p>
         <textarea />
       </TextareaInput>
       <Input>
         <label htmlFor="submit">
-          <Button id="submit">Submit</Button>
+          <Button id="submit">{t(RSVP_BUTTON_TITLE.key)}</Button>
         </label>
       </Input>
     </form>
