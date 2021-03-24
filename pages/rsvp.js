@@ -59,12 +59,17 @@ export default function Rsvp() {
           });
         }}
         cta={t(RSVP_BUTTON_TITLE.key)}
-        message="<span>MARINA DEL REY</span><br/>JULY 1ST, 2021 at 5:15PM"
+        message="<span>MARINA DEL REY</span><br/>JULY 1ST, 2021 at 5:00PM"
         bgImage={'rsvp_bg.png'}
       />
       <Form>
         <h2 style={{ marginBottom: '20px' }}>{t(RSVP_INTRO.key)}</h2>
-        <p style={{ marginBottom: '40px', width: '80%' }}>
+        <p style={{ marginBottom: '40px', width: '80%', padding: '16px', background: '#ccc', fontSize:
+        '18px', lineHeight: '26px',
+          display: 'flex',
+          justifyContent: 'flex-end',
+          flexDirection: 'row',
+          alignItems: 'flex-start',}}>
           {t(RSVP_INTRUCTIONS.key)}
         </p>
         <p
@@ -73,12 +78,14 @@ export default function Rsvp() {
             background: 'red',
             color: 'white',
             maxWidth: '80%',
-            padding: '16px 8px',
+            padding: '16px',
             fontWeight: 'bold',
             display: 'flex',
             justifyContent: 'flex-end',
             flexDirection: 'row',
-            alignItems: 'flex-start'
+            alignItems: 'flex-start',
+            fontSize: '18px',
+            lineHeight: '26px'
           }}
         >
           <span style={{ marginRight: '12px', color: '#fff' }}>

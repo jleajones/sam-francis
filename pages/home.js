@@ -74,9 +74,8 @@ export default function Home() {
       {/*<Collage />*/}
       <TextBar
         title={t('ARE_YOU_COMING_TITLE')}
-        description={t('ARE_YOU_COMING_DESC')}
         href="/rsvp"
-        cta="rsvp"
+        cta={t('RSVP_BUTTON_TITLE')}
       />
     </>
   );

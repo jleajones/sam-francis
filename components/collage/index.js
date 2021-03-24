@@ -33,7 +33,7 @@ export default function Collage() {
             size,
             grow: 2,
             href: 'https://www.instagram.com',
-            cta: '#somehashtag'
+            cta: '#WeGotTheGreenLight'
           },
           {
             url: 'img_3',

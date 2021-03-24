@@ -27,6 +27,10 @@ export const NAVIGATION_ITEMS = [
     slug: '/rsvp'
   },
   {
+    key: 'FAQ_NAV_TEXT',
+    slug: '/faq'
+  },
+  {
     key: 'REGISTRY_NAV_TEXT',
     slug: '/registry'
   }
@@ -224,6 +228,10 @@ export const RSVP_HERO_TITLE = {
 export const RSVP_BUTTON_TITLE = {
   key: 'RSVP_BUTTON_TITLE'
 };
+
+export const RSVP_SUBMIT = {
+  key: 'RSVP_SUBMIT'
+};
 export const RSVP_INTRO = {
   key: 'RSVP_INTRO'
 };
@@ -242,6 +250,15 @@ export const RSVP_LNAME = {
 export const RSVP_EMAIL = {
   key: 'RSVP_EMAIL'
 };
+export const RSVP_GUEST_FNAME = {
+  key: 'RSVP_GUEST_FNAME'
+};
+export const RSVP_GUEST_LNAME = {
+  key: 'RSVP_GUEST_LNAME'
+};
+export const RSVP_GUEST_EMAIL = {
+  key: 'RSVP_GUEST_EMAIL'
+};
 export const RSVP_YES = {
   key: 'RSVP_YES'
 };
@@ -254,23 +271,28 @@ export const RSVP_MSG = {
 
 export const MOTHERS = [
   {
-    name: 'Celeste E. Stapleton de Carrero'
+    name: 'Celeste E. Stapleton de Carrero',
+    img: 'ce_carrero'
   },
   {
-    name: 'Gloria A. Green'
+    name: 'Gloria A. Green',
+    img: 'g_green'
   },
   {
     name: 'Jacqueline Henderson',
-    title: MOTHER_3_QUOTE.key
+    title: MOTHER_3_QUOTE.key,
+    img: 'j_henderson'
   }
 ];
 
 export const FATHERS = [
   {
-    name: 'Guillermo A. Carrero'
+    name: 'Guillermo A. Carrero',
+    img: 'g_carrero'
   },
   {
-    name: 'Calvin Green'
+    name: 'Calvin Green',
+    img: 'c_green'
   }
 ];
 
@@ -357,7 +379,7 @@ export const GROOMSMEN = [
   },
   {
     name: 'Calvin Wilson',
-    title: 'Best Man',
+    title: 'Groomsman',
     answer: GROOMSMEN_2_QUOTE.key,
     desc: GROOMSMEN_2_DESC.key,
     img: 'c_wilson'

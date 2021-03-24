@@ -17,6 +17,7 @@ const StyledBox = styled.div`
 const StyledLink = styled.a`
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
 `;
 
 export default function Box({ size, grow, href, cta, color, url }) {

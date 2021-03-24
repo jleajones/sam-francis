@@ -44,7 +44,7 @@ export default function TextBar({ title, description, href, cta }) {
     <StyledTextBar>
       <StyledTextBarContainer>
         <Title>{title}</Title>
-        <Description>{description}</Description>
+        {description && <Description>{description}</Description>}
         {href && (
           <RsvpButton>
             <Link href={href}>

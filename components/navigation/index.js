@@ -15,7 +15,7 @@ const NavContainer = styled.nav`
 `;
 
 const NavItem = styled.div`
-  padding: 0 20px;
+  padding: 0 15px;
   text-align: right;
 
   &:last-of-type {
@@ -27,7 +27,7 @@ const StyledLink = styled.a`
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  font-size: ${({ size }) => (size === SMALL ? `12px` : `18px`)};
+  font-size: ${({ size }) => (size === SMALL ? `12px` : `16px`)};
   cursor: pointer;
   text-shadow: ${({ size }) =>
     size === SMALL ? `none` : `0 0 2px rgba(0, 0, 0, 0.8)`};
@@ -45,8 +45,6 @@ const NavigationItem = ({ slug, href, size }) => {
   const router = useRouter();
 
   let selected;
-  console.log(href);
-  console.log(router.pathname);
   if (router.pathname === href) {
     selected = 'selected';
   }

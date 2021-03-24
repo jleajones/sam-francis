@@ -13,7 +13,7 @@ const StyledQuestion = styled.div`
 const QuestionText = styled.h2`
   font-size: 24px;
   margin-bottom: 36px;
-  color: ${({ theme }) => theme.colors.greyDark};
+  color: #999;
 `;
 
 const Answer = styled.div`

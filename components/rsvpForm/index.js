@@ -5,10 +5,13 @@ import Button from '../button';
 import { LanguageContext } from '../context/LanguageProvider';
 import { setLanguageCookie } from '../../utils/language';
 import {
-  RSVP_BUTTON_TITLE,
+  RSVP_SUBMIT,
   RSVP_EMAIL,
   RSVP_FNAME,
   RSVP_LNAME,
+  RSVP_GUEST_EMAIL,
+  RSVP_GUEST_FNAME,
+  RSVP_GUEST_LNAME,
   RSVP_MSG,
   RSVP_NO,
   RSVP_YES
@@ -39,9 +42,9 @@ const Input = styled.div`
   position: relative;
 
   > label {
-    font-size: 12px;
+    font-size: 16px;
     text-transform: capitalize;
-    color: #999;
+    color: #666;
   }
 
   > input,
@@ -82,7 +85,7 @@ const TextareaInput = styled(Input)`
   display: block;
   margin-top: 20px;
   > p {
-    color: #999;
+    color: #666;
   }
   > textarea {
     width: 100%;
@@ -212,7 +215,7 @@ export default function RsvpForm({ onSubmit }) {
 
         <Inputs>
           <Input>
-            <label htmlFor="firstName_g">{t(RSVP_FNAME.key)}</label>
+            <label htmlFor="firstName_g">{t(RSVP_GUEST_FNAME.key)}</label>
             <input
               type="text"
               id="firstName_g"
@@ -221,7 +224,7 @@ export default function RsvpForm({ onSubmit }) {
             />
           </Input>
           <Input>
-            <label htmlFor="lastName_g">{t(RSVP_LNAME.key)}</label>
+            <label htmlFor="lastName_g">{t(RSVP_GUEST_LNAME.key)}</label>
             <input
               type="text"
               id="lastName_g"
@@ -230,7 +233,7 @@ export default function RsvpForm({ onSubmit }) {
             />
           </Input>
           <Input>
-            <label htmlFor="email_g">{t(RSVP_EMAIL.key)}</label>
+            <label htmlFor="email_g">{t(RSVP_GUEST_EMAIL.key)}</label>
             <input
               type="text"
               id="email_g"
@@ -273,7 +276,7 @@ export default function RsvpForm({ onSubmit }) {
       </TextareaInput>
       <Input>
         <label htmlFor="submit">
-          <Button id="submit">{t(RSVP_BUTTON_TITLE.key)}</Button>
+          <Button id="submit">{t(RSVP_SUBMIT.key)}</Button>
         </label>
       </Input>
     </form>

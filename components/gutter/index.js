@@ -15,7 +15,7 @@ export default function Gutter() {
       <SpaceBetweenContainer>
         <Navigation items={NAVIGATION_ITEMS} size={SMALL} />
 
-        <div>photos: Joe Doe | web site: j.leajones</div>
+        <div>photographer: King Alexzander (IG: @a1exzart) | developer: j.leajones</div>
       </SpaceBetweenContainer>
     </StyledGutter>
   );

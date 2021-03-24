@@ -12,8 +12,8 @@ export default {
     es: 'página principal'
   },
   ARE_YOU_COMING_TITLE: {
-    en: 'Are you coming?',
-    es: 'MISSING!'
+    en: ' Please let us know if you can join us!',
+    es: 'Por favor déjenos saber si puede venir!'
   },
   ARE_YOU_COMING_DESC: {
     en:
@@ -63,19 +63,17 @@ export default {
   },
   OUR_STORY_QUESTION3: {
     en: 'What is your commitment to one another in this next chapter?',
-    es: '¿Cuál es su compromiso uno al otro, en este próximo capítulo?\n'
+    es: '¿Cuál es su compromiso uno al otro, en este próximo capítulo?'
   },
   OUR_STORY_QUESTION3_BRIDE: {
     en:
       'As we evolve, grow, and become different versions of ourselves, that we work on continuing to understand each other. If we do that, the love is always going to be there. Humor is important to both of us. I also want us to continue laughing for the rest of our lives.',
-
     es:
       'A medida que maduramos, crecemos y nos convertimos en diferentes versiones de nosotros mismos, tenemos que seguir trabajando en fortalecer nuestro entendimiento. Si hacemos eso, el amor siempre estará ahí. El humor es importante para los dos. También quiero que sigamos riéndonos por el resto de nuestras vidas.'
   },
   OUR_STORY_QUESTION3_GROOM: {
     en:
       "Keeping God at the center of our relationship. Always keeping him there because he's the one that's going to help us get through everything.",
-
     es:
       'Mantener a Dios en el centro de nuestra relación. Manteniéndolo siempre ahí porque él es el que nos va a ayudar a superar todo.'
   },
@@ -355,19 +353,23 @@ export default {
   },
   GETTING_THERE_ACCOMMODATIONS_CTA: {
     en: 'book now',
-    es: 'MISSING'
+    es: 'Reserve Aqui'
   },
   RSVP_PAGE_TITLE: {
     en: 'RSVP',
-    es: 'RSVP'
+    es: 'Confirme'
   },
   RSVP_NAV_TEXT: {
     en: 'RSVP',
-    es: 'RSVP'
+    es: 'Confirme'
   },
   RSVP_HERO_TITLE: {
-    en: 'Are you coming?',
-    es: 'missing!!!'
+    en: 'Please RSVP Below',
+    es: 'CONFIRME SU PRESENCIA <br/>Abajo Por Favor'
+  },
+  FAQ_NAV_TEXT: {
+    en: 'FAQs',
+    es: 'Preguntas'
   },
   RSVP_BUTTON_TITLE: {
     en: 'RSVP',
@@ -401,6 +403,18 @@ export default {
     en: 'email address',
     es: 'correo electrónico'
   },
+  RSVP_GUEST_FNAME: {
+    en: 'guest first name',
+    es: 'Primer nombre del invitado'
+  },
+  RSVP_GUEST_LNAME: {
+    en: 'guest last name',
+    es: 'Apellido del invitado'
+  },
+  RSVP_GUEST_EMAIL: {
+    en: 'guest email address',
+    es: 'correo electrónico del invitado'
+  },
   RSVP_YES: {
     en: " Yes, I'm in there! ",
     es: '¡Sí, estoy ahí!'
@@ -415,6 +429,12 @@ export default {
     es:
       '¡Déjenos un mensaje, consejo o cualquier sugerencia sobre cosas nuevas y divertidas que podemos hacer al entrar en nuestro matrimonio!'
   },
+  RSVP_SUBMIT: {
+    en:
+      'Submit',
+    es:
+      'Enviar Respuesta'
+  },
   REGISTRY_PAGE_TITLE: {
     en: 'registry',
     es: 'registro'
@@ -426,8 +446,8 @@ export default {
   DATE_TIME_TITLE: { en: 'date + time', es: 'fecha y hora' },
   DATE_TIME_HEADING: { en: 'THURSDAY', es: 'JUEVES' },
   DATE_TIME_DESCRIPTION: {
-    en: 'July 1st, 2021<br/>5:15PM',
-    es: '1ero de Julio 2021<br/>5:15PM'
+    en: 'July 1st, 2021<br/>5:00PM',
+    es: '1ero de Julio 2021<br/>5:00PM'
   },
   VENUE_TITLE: { en: 'venue', es: 'lugar' },
   VENUE_HEADING: { en: 'MARINA DEL REY' },
@@ -443,7 +463,11 @@ export default {
   HASHTAG_TITLE: { en: 'hashtag', es: '' },
   HASHTAG_HEADING: { en: '#WeGotTheGreenLight' },
   HASHTAG_DESCRIPTION: {
-    en: 'tag all the fun - use our<br/>tag on all platforms!',
-    es: '¡MARQUE TODAS LA DIVERSIÓN<br/>EN LAS REDES SOCIALES!'
+    en: 'tag all the fun <br/>on social media!',
+    es: '¡MARQUE TODA LA DIVERSIÓN<br/>EN LAS REDES SOCIALES!'
+  },
+  FAQ_PAGE_TITLE: {
+    en: 'Frequently Asked Questions',
+    es: 'Preguntas mas frequentes'
   }
 };

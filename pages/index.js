@@ -82,7 +82,7 @@ export default function Splash() {
   const [, setLocale] = useContext(LanguageContext);
 
   const onClickHandler = (e) => {
-    if (e.target.innerText.toLowerCase() === 'spanish') {
+    if (e.target.innerText.toLowerCase() !== 'english') {
       setLocale(LANGUAGES.ES);
     } else {
       setLocale(LANGUAGES.EN);
@@ -113,7 +113,7 @@ export default function Splash() {
                 english
               </Button>
               <Button onClick={onClickHandler} ghost>
-                spanish
+                español
               </Button>
             </Buttons>
           </Content>
