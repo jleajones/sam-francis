@@ -32,7 +32,7 @@ export default function Collage() {
             color: 'black',
             size,
             grow: 2,
-            href: 'https://www.instagram.com',
+            href: 'https://www.instagram.com/explore/tags/wegotthegreenlight/',
             cta: '#WeGotTheGreenLight'
           },
           {
@@ -89,7 +89,7 @@ export default function Collage() {
             color: 'black',
             size,
             grow: 2,
-            href: 'https://www.instagram.com',
+            href: 'https://www.instagram.com/explore/tags/wegotthegreenlight/',
             cta: 'sam+fran'
           },
           {

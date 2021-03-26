@@ -51,7 +51,7 @@ export default function WeddingCypher() {
       <Background>
         <TitleContainer>
           <h2>{t(PARENTS_TITLE.key)}</h2>
-          <p>{t(PARENTS_DESC.key)}</p>
+          <p style={{fontSize: '18px'}}>{t(PARENTS_DESC.key)}</p>
         </TitleContainer>
 
         <TitleContainer>

@@ -269,6 +269,90 @@ export const RSVP_MSG = {
   key: 'RSVP_MSG'
 };
 
+export const FAQ_QUESTION_1 = {
+  key: 'FAQ_QUESTION_1'
+}
+export const FAQ_QUESTION_2 = {
+  key: 'FAQ_QUESTION_2'
+}
+export const FAQ_QUESTION_3 = {
+  key: 'FAQ_QUESTION_3'
+}
+export const FAQ_QUESTION_4 = {
+  key: 'FAQ_QUESTION_4'
+}
+export const FAQ_QUESTION_5 = {
+  key: 'FAQ_QUESTION_5'
+}
+export const FAQ_QUESTION_6 = {
+  key: 'FAQ_QUESTION_6'
+}
+export const FAQ_QUESTION_7 = {
+  key: 'FAQ_QUESTION_7'
+}
+export const FAQ_QUESTION_8 = {
+  key: 'FAQ_QUESTION_8'
+}
+
+export const FAQ_ANSWER_1 = {
+  key: 'FAQ_ANSWER_1'
+}
+export const FAQ_ANSWER_2 = {
+  key: 'FAQ_ANSWER_2'
+}
+export const FAQ_ANSWER_3 = {
+  key: 'FAQ_ANSWER_3'
+}
+export const FAQ_ANSWER_4 = {
+  key: 'FAQ_ANSWER_4'
+}
+export const FAQ_ANSWER_5 = {
+  key: 'FAQ_ANSWER_5'
+}
+export const FAQ_ANSWER_6 = {
+  key: 'FAQ_ANSWER_6'
+}
+export const FAQ_ANSWER_7 = {
+  key: 'FAQ_ANSWER_7'
+}
+export const FAQ_ANSWER_8 = {
+  key: 'FAQ_ANSWER_8'
+}
+export const REGISTRY_TITLE = {
+  key: 'REGISTRY_TITLE'
+}
+export const REGISTRY_NOTE = {
+  key: 'REGISTRY_NOTE'
+}
+
+
+export const FAQS = [{
+  q: FAQ_QUESTION_1,
+  a: FAQ_ANSWER_1
+},{
+  q: FAQ_QUESTION_2,
+  a: FAQ_ANSWER_2
+},{
+  q: FAQ_QUESTION_3,
+  a: FAQ_ANSWER_3
+},{
+  q: FAQ_QUESTION_4,
+  a: FAQ_ANSWER_4
+},{
+  q: FAQ_QUESTION_5,
+  a: FAQ_ANSWER_5
+},{
+  q: FAQ_QUESTION_6,
+  a: FAQ_ANSWER_6
+},{
+  q: FAQ_QUESTION_7,
+  a: FAQ_ANSWER_7
+},{
+  q: FAQ_QUESTION_8,
+  a: FAQ_ANSWER_8
+}
+]
+
 export const MOTHERS = [
   {
     name: 'Celeste E. Stapleton de Carrero',

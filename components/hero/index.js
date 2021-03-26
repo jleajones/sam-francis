@@ -35,7 +35,7 @@ const Message = styled.p`
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.accentDark};
   font-size: 42px;
-  line-height: 40px;
+  line-height: 60px;
   margin-bottom: 50px;
   position: relative;
   top: 10px;

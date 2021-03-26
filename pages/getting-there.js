@@ -102,7 +102,7 @@ export default function GettingThere() {
 
         <MapText>
           <Textblock>
-            <Heading>{t('GETTING_THERE_ACCOMMODATIONS_TEXT')}</Heading>
+            <Heading style={{ color: '#faca19'}}>{t('GETTING_THERE_ACCOMMODATIONS_TEXT')}</Heading>
             <p
               style={{
                 marginBottom: '40px',
@@ -136,9 +136,9 @@ export default function GettingThere() {
             </p>
 
             <BookNow>
-              <Link href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1612807718740&key=GRP&app=resvlink">
+              <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1612807718740&key=GRP&app=resvlink" target="_blank">
                 {t('GETTING_THERE_ACCOMMODATIONS_CTA')}
-              </Link>
+              </a>
             </BookNow>
           </Textblock>
           <Textblock>
@@ -159,9 +159,9 @@ export default function GettingThere() {
             </p>
 
             <BookNow>
-              <Link href="https://reservations.travelclick.com/111046?groupID=3202106#/guestsandrooms">
+              <a href="https://reservations.travelclick.com/111046?groupID=3202106#/guestsandrooms" target="_blank">
                 {t('GETTING_THERE_ACCOMMODATIONS_CTA')}
-              </Link>
+              </a>
             </BookNow>
           </Textblock>
         </MapText>

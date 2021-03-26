@@ -364,8 +364,8 @@ export default {
     es: 'Confirme'
   },
   RSVP_HERO_TITLE: {
-    en: 'Please RSVP Below',
-    es: 'CONFIRME SU PRESENCIA <br/>Abajo Por Favor'
+    en: 'Please RSVP<br/>Below',
+    es: 'CONFIRME<br/>SU PRESENCIA<br/>Abajo Por Favor'
   },
   FAQ_NAV_TEXT: {
     en: 'FAQs',
@@ -469,5 +469,77 @@ export default {
   FAQ_PAGE_TITLE: {
     en: 'Frequently Asked Questions',
     es: 'Preguntas mas frequentes'
+  },
+  FAQ_QUESTION_1: {
+    en: 'When should I RSVP?',
+    es: '¿Cuándo debo de confirmar mi presencia?'
+  },
+  FAQ_ANSWER_1: {
+    en: 'Please RSVP by May 1st, 2021 and let us know if you will or won’t be able to attend the celebration.',
+    es: 'Por favor confirme su presencia antes del 1 de Mayo del 2021 y avísenos si podrá o no podrá asistir a la celebración.'
+  },
+  FAQ_QUESTION_2: {
+    en: 'Can I bring a date?',
+    es: '¿Puedo traer un invitado?'
+  },
+  FAQ_ANSWER_2: {
+    en: 'Though we would love to have you bring a plus one, unfortunately, seats are limited. Your invitation is for you, unless otherwise noted. Thank you for your understanding!',
+    es: 'Aunque nos encantaría que trajeran un invitado, desafortunadamente, los asientos son limitados. Su invitación es para usted, a menos que se indique lo contrario. ¡Gracias por su comprensión!'
+  },
+  FAQ_QUESTION_3: {
+    en: 'Are kids welcome?',
+    es: '¿Están invitados los niños?'
+  },
+  FAQ_ANSWER_3: {
+    en: 'Even though we love the kids, our wedding celebration is going to be for 21 and over.<br/><br/>For those with little ones, we appreciate you making arrangements ahead of time so you can celebrate with us.',
+    es: 'Aunque amamos a los niños, la celebración de nuestra boda será para mayores de 21 años o más.<br/><br/>Para aquellos con niños, le agradecemos los arreglos que están haciendo para poder celebrar con nosotros.'
+  },
+  FAQ_QUESTION_4: {
+    en: 'How is the venue enforcing COVID-19 safety guidelines? ',
+    es: '¿Cómo está Marina del Rey asegurando la seguridad contra el COVID-19?'
+  },
+  FAQ_ANSWER_4: {
+    en: 'Under New York State guidelines, Marina Del Rey is only allowed to operate at 50% capacity.<br/><br/>New York State regulations are allowing wedding celebrations provided that everyone on site has proof of a negative COVID-19 test taken within 48-72 hours prior to the event. You and everyone else in attendance will have to show proof of a negative COVID-19 test on printed paper or on your mobile device upon arrival to Marina Del Rey.<br/><br/>They also have hand sanitizers throughout their space and are constantly disinfecting all door knobs and restrooms. Additionally, guests are required to wear masks when they are not at their seats.',
+    es: 'Bajo las guías del estado de Nueva York, Marina Del Rey está operando con 50% capacidad.<br/><br/>Por favor, tenga en cuenta que las regulaciones del estado de Nueva York permiten celebraciones de bodas en el lugar que todos los invitados tengan una prueba negativa de COVID-19 tomada dentro de las 48-72 horas anteriores. Cuando llegue a Marina Del Rey, usted y todos los invitados tendrán que mostrar una prueba negativa de COVID-19 en papel del médico, en papel de donde se hizo la prueba, o en su teléfono celular.<br/><br/>Marina Del Rey también ha agregado desinfectantes de manos en el espacio y están constantemente desinfectando todas las perillas de las puertas y los baños. Adicionalmente, los invitados deben usar mascarillas cuando no estén en sus asientos.'
+  },
+  FAQ_QUESTION_5: {
+    en: 'Are the ceremony and the reception at the same location?',
+    es: '¿Están la ceremonia y la recepción en el mismo lugar?'
+  },
+  FAQ_ANSWER_5: {
+    en: 'Yes, both the ceremony and the reception will be at Marina Del Rey. The ceremony and cocktail hour will be outdoors and the reception will be in one of their beautiful ballrooms, which extends to a small outdoor seating area.',
+    es: 'Sí, la ceremonia y la recepción serán los dos en Marina Del Rey. La ceremonia y la hora del cóctel serán afuera, y la recepción será en uno de los hermosos salones de baile.'
+  },
+  FAQ_QUESTION_6: {
+    en: 'What is the dress code?',
+    es: '¿Cuál es el código de vestir?'
+  },
+  FAQ_ANSWER_6: {
+    en: 'The dress code is chic formal attire! What does that mean? Just look fabulous and fashionable in formal attire.<br/><br/>We know it’s probably been a while since most of us have gotten all glammed up due to COVID-19. Here’s a chance to show up and show out!<br/><br/>Please don’t wear white, all black or gold as these are our wedding colors.',
+    es: '¡El código de vestir es de moda formal! ¿Qué significa eso? Que luzca fabulosa/o y a la moda con atuendo de gala.<br/><br/>Sabemos que probablemente ha pasado un tiempo desde que la mayoría de nosotros nos hemos puesto glamorosos debido al COVID-19. ¡Aquí tienes la oportunidad de enseñar su glamour!<br/><br/>Por favor, no se vista con blanco, negro entero o dorado, por que esos son los colores de decoracion de la boda.'
+  },
+  FAQ_QUESTION_7: {
+    en: 'Will you be able to accommodate my diet restrictions? ',
+    es: '¿Podrá adaptarse a mis restricciones dietéticas?'
+  },
+  FAQ_ANSWER_7: {
+    en: 'Yes! We have selected a variety of scrumptious food that caters to meat eaters, pescatarians, vegetarians and vegans.<br/><br/>Additionally, the menu will also include options for those who drink bubbly and wine as well as those of you who prefer something a little stronger or simply want a soft drink.',
+    es: '¡Sí! Hemos seleccionado una variedad de comida deliciosa que está al gusto de los consumidores de carne, los pescetarianos, vegetarianos y veganos.<br/><br/>Además, el menú también incluirá opciones para quienes beben champán y vino, así como para quienes prefieren algo un poco más fuerte o simplemente quieren refresco.'
+  },
+  FAQ_QUESTION_8: {
+    en: 'Who should I contact if I have any other questions? ',
+    es: '¿Con quién debo comunicarme si tengo alguna otra pregunta?'
+  },
+  FAQ_ANSWER_8: {
+    en: 'Please send us an email at samuelfrancis1119@gmail.com.',
+    es: 'Por favor mándenos un correo electrónica a samuelfrancis1119@gmail.com.'
+  },
+  REGISTRY_TITLE: {
+    en: 'Your love and support is the most important gift to us.',
+    es: 'Su amor y apoyo es el regalo más importante para nosotros.'
+  },
+  REGISTRY_NOTE: {
+    en: 'We are blessed with the necessities of everyday life, and have dedicated our registry to securing a down payment for our future home. You can contribute as much as you are able to. And if not, your presence in our life is always enough.<br/><br/>Either way, we thank you dearly for your love and support! May God bless you always!',
+    es: 'Estamos bendecidos con las necesidades de la vida diaria y hemos dedicado nuestro registro a asegurar un pago inicial para nuestro futuro hogar. Puedes contribuir lo que que puedas. Y si no, su presencia en nuestra vida siempre es suficiente.<br/><br/>De cualquier manera, ¡le agradecemos mucho su amor y apoyo!  ¡Que Dios siempre lo bendiga!'
   }
 };
