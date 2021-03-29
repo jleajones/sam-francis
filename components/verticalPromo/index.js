@@ -21,6 +21,8 @@ const Image = styled.img`
   width: 100px;
   height: 100px;
   margin: 0 auto 20px;
+  position: relative;
+  top: ${({ slug }) => slug === 'VENUE' ? '-8px' : 0};
 `;
 
 const Title = styled.h4`
@@ -51,7 +53,7 @@ export default function VerticalPromo({ slug, title, heading, description }) {
   const { t } = useTranslation();
   return (
     <Promo>
-      <Image src={`/${slug.toLowerCase()}.svg`} />
+      <Image src={`/${slug.toLowerCase()}.svg`} slug={slug}/>
       <Title>{t(title)}</Title>
       <Heading>{t(heading)}</Heading>
       <Description dangerouslySetInnerHTML={{ __html: t(description) }} />

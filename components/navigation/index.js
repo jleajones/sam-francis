@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -6,20 +7,24 @@ import { useRouter } from 'next/router';
 import { SMALL } from '../../constants';
 
 const NavContainer = styled.nav`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  @media (min-width: 1024px) {
+  @media (min-width: 1060px) {
+    display: flex;
     flex-direction: row;
   }
 `;
 
 const NavItem = styled.div`
-  padding: 0 15px;
-  text-align: right;
+  display: ${({ isVisible, size }) => isVisible || size === SMALL ? `block` : `none`};
+  text-align: ${({ size }) => size === SMALL ? `left` : `center`};
+  padding: ${({ size }) => size === SMALL ? `10px 0` : `25px 0`};
+  @media (min-width: 1060px) {
+    display: flex;
+    padding: 0 15px;
+    text-align: right;
 
-  &:last-of-type {
-    padding-right: 0;
+    &:last-of-type {
+      padding-right: 0;
+    }
   }
 `;
 
@@ -40,7 +45,7 @@ const StyledLink = styled.a`
   }
 `;
 
-const NavigationItem = ({ slug, href, size }) => {
+const NavigationItem = ({ slug, href, size, isVisible, hideMenu }) => {
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -50,9 +55,9 @@ const NavigationItem = ({ slug, href, size }) => {
   }
 
   return (
-    <NavItem size={size}>
+    <NavItem size={size} isVisible={isVisible}>
       <Link href={href}>
-        <StyledLink selected={selected} size={size}>
+        <StyledLink selected={selected} size={size} onClick={hideMenu}>
           {t(slug)}
         </StyledLink>
       </Link>
@@ -66,15 +71,17 @@ NavigationItem.propTypes = {
   size: PropTypes.oneOf(['', SMALL])
 };
 
-export default function Navigation({ items, size }) {
+export default function Navigation({ className, items, size, showMenu, hideMenu }) {
   return (
-    <NavContainer size={size}>
+    <NavContainer size={size} className={className}>
       {items.map((item) => (
         <NavigationItem
           key={item.key}
           slug={item.key}
           href={item.slug}
           size={size}
+          isVisible={showMenu}
+          hideMenu={hideMenu}
         />
       ))}
     </NavContainer>

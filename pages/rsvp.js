@@ -21,7 +21,8 @@ import {
   RSVP_COVID,
   RSVP_HERO_TITLE,
   RSVP_INTRO,
-  RSVP_INTRUCTIONS
+  RSVP_INTRUCTIONS,
+  RSVP_TIME_DESCRIPTION
 } from '../constants';
 
 const Form = styled(Container)`
@@ -59,8 +60,9 @@ export default function Rsvp() {
           });
         }}
         cta={t(RSVP_BUTTON_TITLE.key)}
-        message="<span>MARINA DEL REY</span><br/>JULY 1ST, 2021 at 5:00PM"
+        message={`<span>MARINA DEL REY</span><br/>${t(RSVP_TIME_DESCRIPTION.key)}`}
         bgImage={'rsvp_bg.png'}
+        page="rsvp"
       />
       <Form>
         <h2 style={{ marginBottom: '20px' }}>{t(RSVP_INTRO.key)}</h2>

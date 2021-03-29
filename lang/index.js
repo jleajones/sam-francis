@@ -365,7 +365,7 @@ export default {
   },
   RSVP_HERO_TITLE: {
     en: 'Please RSVP<br/>Below',
-    es: 'CONFIRME<br/>SU PRESENCIA<br/>Abajo Por Favor'
+    es: "CONFIRME<br/>SU PRESENCIA"
   },
   FAQ_NAV_TEXT: {
     en: 'FAQs',
@@ -448,6 +448,10 @@ export default {
   DATE_TIME_DESCRIPTION: {
     en: 'July 1st, 2021<br/>5:00PM',
     es: '1ero de Julio 2021<br/>5:00PM'
+  },
+  RSVP_TIME_DESCRIPTION: {
+    en: 'July 1st, 2021 5:00PM',
+    es: '1ero de Julio 2021 5:00PM'
   },
   VENUE_TITLE: { en: 'venue', es: 'lugar' },
   VENUE_HEADING: { en: 'MARINA DEL REY' },

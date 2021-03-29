@@ -38,15 +38,18 @@ const MapText = styled(SpaceBetweenContainer)`
 `;
 
 const Textblock = styled.div`
-  margin-bottom: 20px;
-  margin-right: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
   p > b {
     font-family: futura-pt-bold;
   }
-  width: 20%;
+  @media (min-width: 1024px) {
+    width: 20%;
+    margin-bottom: 20px;
 
-  :first-of-type {
-    width: 40%;
+    :first-of-type {
+      width: 40%;
+    }
   }
 `;
 

@@ -8,13 +8,14 @@ const BackgroundImage = styled.div`
   background: url(${({ bgImage }) => bgImage}) no-repeat;
   background-size: cover;
   border-bottom: solid 8px ${({ theme }) => theme.colors.accent};
+  background-position: ${({ page }) => page === 'home' ? '20% 0' : page === 'rsvp' ? '75% 0' : '0 0'};
   @media (min-width: 1024px) {
-    // background-position: 0 0;
+    background-position: 0 0;
   }
 `;
 
 const Text = styled.div`
-  padding-top: 300px;
+  padding-top: 360px;
 `;
 
 const Color = styled(FlexContainer)`
@@ -34,24 +35,34 @@ const Message = styled.p`
 
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.accentDark};
-  font-size: 42px;
-  line-height: 60px;
-  margin-bottom: 50px;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 40px;
   position: relative;
   top: 10px;
 
   > span {
-    font-size: 90px;
+    font-size: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 42px;
+    line-height: 60px;
+    margin-bottom: 50px;
+
+    > span {
+      font-size: 90px;
+    }
   }
 `;
 
-export function Hero({ bgImage }) {
-  return <BackgroundImage bgImage={bgImage} />;
+export function Hero({ bgImage, page }) {
+  return <BackgroundImage bgImage={bgImage} page={page}/>;
 }
 
-export function HeroWithText({ bgImage, title, href, cta, onClick, message }) {
+export function HeroWithText({ bgImage, title, href, cta, onClick, message, page }) {
   return (
-    <BackgroundImage bgImage={bgImage}>
+    <BackgroundImage bgImage={bgImage} page={page}>
       <Text>
         <Color>
           <div>

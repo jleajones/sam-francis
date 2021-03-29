@@ -38,7 +38,7 @@ export default function Home() {
         <title>{pageTitle}</title>
       </Head>
 
-      <Hero bgImage={'home_bg.png'} />
+      <Hero bgImage={'home_bg.png'} page="home"/>
       <Promos>
         <SpaceBetweenContainer>
           {HOME_PAGE_PROMOS.map((promo) => (

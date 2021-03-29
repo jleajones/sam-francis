@@ -26,12 +26,20 @@ const StyledLink = styled.a`
   font-weight: bold;
 `;
 
-const PayPalButton = styled(Button)`
-  width: 190px;
+const ButtonContainer = styled(SpaceBetweenContainer)`
+  margin-right: 20px;
+`;
 
+const PayPalButton = styled(Button)`
+  width: 100%;
+  margin-bottom: 10px;
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+  @media (min-width: 1024px) {
+    width: 160px;
   }
 `;
 
@@ -55,23 +63,19 @@ export default function Registry() {
           <p dangerouslySetInnerHTML={{ __html: t(REGISTRY_NOTE.key) }} />
 
         </TitleContainer>
-        <div style={{ width: '600px', margin: '0 auto', marginBottom: '60px'}}>
-          <SpaceBetweenContainer>
-            <div>
+        <div style={{ minWidth: '300px', maxWidth: '600px', width: '90%', margin: '0 auto', marginBottom: '60px'}}>
+          <ButtonContainer>
               <PayPalButton>
                 <a href='https://registry.theknot.com/francis-carrero-samuel-green-july-2021-ny/31514207' target="_blank">
                   The Knot
                 </a>
               </PayPalButton>
-            </div>
-            <div>
               <PayPalButton>
                 <a href='https://www.paypal.com/paypalme/SamandFrancis?locale.x=en_US' target="_blank">
                   PayPal
                 </a>
               </PayPalButton>
-            </div>
-          </SpaceBetweenContainer>
+          </ButtonContainer>
         </div>
       </section>
       {/*<Footer />*/}

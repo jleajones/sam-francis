@@ -52,7 +52,6 @@ export default function Registry() {
         </TitleContainer>
         <Container>
           {FAQS.map(faq =>{
-            console.log(faq.q);
             return(
             <div style={{ minWidth: '300px', width: '60%', margin: '0 auto'}}>
               <div style={{ marginBottom: '60px'}}>

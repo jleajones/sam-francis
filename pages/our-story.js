@@ -21,7 +21,11 @@ const BackgroundImage = styled.section`
   display: flex;
   flex-direction: column;
   background: url('/our_story.png') no-repeat;
+  background-position: 50% 0;
+  background-size: 100% auto;
+
   @media (min-width: 1024px) {
+    background-position: 0 0;
     flex-direction: row;
     background-size: 50% 100%;
     justify-content: flex-end;
@@ -41,12 +45,22 @@ const GramText = styled.span`
 `;
 
 const QuestionContainer = styled(FlexContainer)`
+  background: rgba(255, 255, 255,  0.5);
+  padding: 20px;
+  margin-top: 590px;
   @media (min-width: 1024px) {
+    background: none;
+    padding: 0;
+    margin-top: 0;
     justify-content: flex-end;
   }
 `;
 
 const QuestionIntro = styled.p`
+
+  @media (min-width: 1024px) {
+    justify-content: flex-end;
+  }
   margin-bottom: 40px;
   font-size: 24px;
   line-height: 32px;
@@ -54,16 +68,17 @@ const QuestionIntro = styled.p`
 `;
 
 const Questions = styled.div`
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    padding: 40px 10px 40px 40px;
+
   border-left: solid 1px #fff;
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
     display: none;
   }
-
-  @media (min-width: 1024px) {
-    width: 50%;
-    padding: 40px 10px 40px 40px;
   }
 `;
 
@@ -78,15 +93,27 @@ const GramSection = styled.section`
 `;
 
 const Gram = styled.div`
-  width: calc(${({ size }) => size}px - 2px);
-  margin: 1px 1px 20px 1px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+
+    width: calc(${({ size }) => size}px - 2px);
+    margin: 1px 1px 20px 1px;
+  }
 
   &:hover {
   }
   > div {
-    height: calc(${({ size }) => size}px - 2px);
     background: #fcfcfc url('${({ url }) => url}.png') no-repeat center;
-    background-size: ${({ size }) => size}px auto;
+    height: 320px;
+    background-size: 100% auto;
+
+
+    @media (min-width: 1024px) {
+      background-size: ${({ size }) => size}px auto;
+      height: calc(${({ size }) => size}px - 2px);
+    }
   }
 
   > p {

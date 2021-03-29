@@ -7,6 +7,7 @@ const StyledGutter = styled.section`
   border-top: solid 8px ${({ theme }) => theme.colors.accentDark};
   background: #c29a04;
   padding: 20px 0;
+  font-size: 10px;
 `;
 
 export default function Gutter() {
@@ -14,8 +15,7 @@ export default function Gutter() {
     <StyledGutter>
       <SpaceBetweenContainer>
         <Navigation items={NAVIGATION_ITEMS} size={SMALL} />
-
-        <div>photographer: King Alexzander (IG: @a1exzart) | developer: j.leajones</div>
+        <div style={{ color: '#fff', textAlign: 'right'}}>Photography by: King Alexzander (IG: @a1exzart) | Website by: j.leajones</div>
       </SpaceBetweenContainer>
     </StyledGutter>
   );
