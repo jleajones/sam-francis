@@ -45,7 +45,7 @@ export default function Rsvp() {
 
   const onSubmit = async (formData) => {
     console.log(formData);
-    await axios.post('/api/send', {
+    const res = await axios.post('/api/send', {
       ...formData
     });
 

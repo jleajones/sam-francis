@@ -7,11 +7,11 @@ export default async function(req, res) {
 
   const content = {
     to: 'samuelfrancis1119@gmail.com',
-    from: email,
+    from: 'samuelfrancis1119@gmail.com',
     subject: `Wedding RSVP from - ${email}`,
     text: `${name} ${guestName ? `| ${guestName}` : ''}`,
     html: `<h5>Primary Guest: ${name}  (${email})</h5> <p> RSVP Status: ${rsvp}</h5>
-      <p>Additional Guest: ${guestName} (${guestEmail}) | RSVP Status ${guestRsvp} |</p>
+      ${guestName.length > 1 ? `<p>Additional Guest: ${guestName} (${guestEmail}) | RSVP Status ${guestRsvp}</p>` : ''}
     <p>${message}</p>`
   }
 
