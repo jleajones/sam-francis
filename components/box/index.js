@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const StyledBox = styled.div`
   width: ${({ size, grow = 1 }) => grow * size}px;
   height: ${({ size }) => size}px;
-  background: ${({ color }) => color} url('${({ url }) => url}.jpg') no-repeat
+
+  background: ${({ color }) => color} ${({ url }) => url ? `url(${url}.jpg)` : ''} no-repeat
     center;
   background-size: ${({ size }) => size}px auto;
   color: #fff;

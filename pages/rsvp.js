@@ -1,6 +1,7 @@
 import { useEffect, useContext, useState } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+import axios from 'axios';
 
 import Head from 'next/head';
 import { setLanguageCookie } from '../utils/language';
@@ -42,8 +43,13 @@ export default function Rsvp() {
   }, []);
   const pageTitle = t('RSVP_PAGE_TITLE');
 
-  const onSubmit = (formData) => {
+  const onSubmit = async (formData) => {
     console.log(formData);
+    await axios.post('/api/send', {
+      ...formData
+    });
+
+    console.log(res.data);
     setIsSubmitted(true);
   };
 
