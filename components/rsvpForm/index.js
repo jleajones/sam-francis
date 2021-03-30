@@ -121,8 +121,9 @@ export default function RsvpForm({ onSubmit }) {
   const [msg, setMsg] = useState('');
 
   const [error, setError] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     setError('');
     e.preventDefault();
 
@@ -150,10 +151,13 @@ export default function RsvpForm({ onSubmit }) {
       guestRsvp: attendance_g,
       message: msg
     };
-    onSubmit(formData);
+
+    const success = await onSubmit(formData);
+
+    if(success) setSubmitted(true);
   };
 
-  return (
+  return submitted === true ? null : (
     <form id="form" onSubmit={handleSubmit}>
       {error}
       <InputsContainer>

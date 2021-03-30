@@ -273,6 +273,14 @@ export const RSVP_TIME_DESCRIPTION = {
   key: 'RSVP_TIME_DESCRIPTION'
 };
 
+export const RSVP_SUCCESS = {
+  key: 'RSVP_SUCCESS'
+};
+
+export const RSVP_SUCCESS_MESSAGE = {
+  key: 'RSVP_SUCCESS_MESSAGE'
+};
+
 export const FAQ_QUESTION_1 = {
   key: 'FAQ_QUESTION_1'
 }

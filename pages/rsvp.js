@@ -23,7 +23,9 @@ import {
   RSVP_HERO_TITLE,
   RSVP_INTRO,
   RSVP_INTRUCTIONS,
-  RSVP_TIME_DESCRIPTION
+  RSVP_TIME_DESCRIPTION,
+  RSVP_SUCCESS,
+  RSVP_SUCCESS_MESSAGE,
 } from '../constants';
 
 const Form = styled(Container)`
@@ -31,6 +33,15 @@ const Form = styled(Container)`
 
   > div {
     flex-grow: 1;
+  }
+`;
+
+const SuccessMessage = styled.div`
+text-align: center;
+  h5 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 120px;
   }
 `;
 
@@ -44,14 +55,16 @@ export default function Rsvp() {
   const pageTitle = t('RSVP_PAGE_TITLE');
 
   const onSubmit = async (formData) => {
-    console.log(formData);
     const res = await axios.post('/api/send', {
       ...formData
     });
 
-    console.log(res.data);
-    setIsSubmitted(true);
+    if(res.data) {
+      setIsSubmitted(true);
+      return res.data;
+    }
   };
+
 
   return (
     <>
@@ -106,14 +119,11 @@ export default function Rsvp() {
         </p>
         <RsvpForm onSubmit={onSubmit} />
 
-        <div style={{ display: isSubmitted ? 'block' : 'none' }}>
-          <h5>Thank you for your RSVP.</h5>
-          <p>
-            Please visit the{' '}
-            <Link href="/getting-there">"Getting There" page</Link> if you plan
-            to attend and check out the FAQs below.
-          </p>
-        </div>
+        <SuccessMessage style={{ display: isSubmitted ? 'block' : 'none' }}>
+          <h5>{t(RSVP_SUCCESS.key)}</h5>
+          <p
+            dangerouslySetInnerHTML={{ __html: t(RSVP_SUCCESS_MESSAGE.key) }}/>
+        </SuccessMessage>
       </Form>
       {/*<Footer />*/}
       {/*<Collage />*/}

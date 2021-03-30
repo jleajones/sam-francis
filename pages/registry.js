@@ -65,12 +65,12 @@ export default function Registry() {
         </TitleContainer>
         <div style={{ minWidth: '300px', maxWidth: '600px', width: '90%', margin: '0 auto', marginBottom: '60px'}}>
           <ButtonContainer>
-              <PayPalButton>
+              <PayPalButton key="knot">
                 <a href='https://registry.theknot.com/francis-carrero-samuel-green-july-2021-ny/31514207' target="_blank">
                   The Knot
                 </a>
               </PayPalButton>
-              <PayPalButton>
+              <PayPalButton key="paypal">
                 <a href='https://www.paypal.com/paypalme/SamandFrancis?locale.x=en_US' target="_blank">
                   PayPal
                 </a>

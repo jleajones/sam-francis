@@ -435,6 +435,14 @@ export default {
     es:
       'Enviar Respuesta'
   },
+  RSVP_SUCCESS: {
+    en: 'Thank you for your RSVP!',
+    es: '¡Gracias por su confirmacion!'
+  },
+  RSVP_SUCCESS_MESSAGE: {
+    en: `You will receive a confirmation email and if you have any additional questions, feel free to look at the <Link href='/faq'>FAQs page</Link> or email us at samuelfrancis1119@gmail.com.`,
+    es: `Recibirá un correo electrónico con su confirmacion, y si tiene alguna pregunta adicional, cheqee <Link href='/faq'>la página de preguntas frecuentes</Link> o envíenos un correo electrónico a samuelfrancis1119@gmail.com.`
+  },
   REGISTRY_PAGE_TITLE: {
     en: 'registry',
     es: 'registro'
