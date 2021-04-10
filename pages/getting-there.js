@@ -21,10 +21,17 @@ const MapContainer = styled(FlexContainer)`
 const Map = styled.div`
   width: 100%;
   border: solid 1px #ccc;
-  height: 560px;
+  height: 280px;
   margin-bottom: 40px;
   background: url('/map.png') no-repeat;
   background-position: center;
+  background-size: 100% auto;
+
+
+
+  @media (min-width: 1024px) {
+    height: 560px;
+  }
 `;
 
 const MapText = styled(SpaceBetweenContainer)`

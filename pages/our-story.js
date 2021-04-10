@@ -204,7 +204,7 @@ export default function OurStory() {
           <Gram size={gram} url="os_3">
             <div />
             <p>
-              <GramText>Bowling @ New Roc City, December 2010</GramText>
+              <GramText>Bowling at New Roc City, December 2010</GramText>
             </p>
           </Gram>
           <Gram size={gram} url="os_4">
