@@ -551,7 +551,79 @@ export default {
     es: 'Su amor y apoyo es el regalo más importante para nosotros.'
   },
   REGISTRY_NOTE: {
-    en: 'We are blessed with the necessities of everyday life, and have dedicated our registry to securing a down payment for our future home. You can contribute as much as you are able to. And if not, your presence in our life is always enough.<br/><br/>Either way, we thank you dearly for your love and support! May God bless you always!',
-    es: 'Estamos bendecidos con las necesidades de la vida diaria y hemos dedicado nuestro registro a asegurar un pago inicial para nuestro futuro hogar. Puedes contribuir lo que que puedas. Y si no, su presencia en nuestra vida siempre es suficiente.<br/><br/>De cualquier manera, ¡le agradecemos mucho su amor y apoyo!  ¡Que Dios siempre lo bendiga!'
+    en: 'We are blessed with the necessities of everyday life, and have dedicated our registry to updating and adding a few items in our home and securing a down payment for our future house.<br/><br/>Please feel free to choose an item from our registry on The Knot or you can contribute to our future house via PayPal or on The Knot as well.<br/><br/>Either way, we thank you dearly for your love and support! May God bless you always!',
+    es: 'Estamos bendecidos con las necesidades de la vida diaria y hemos dedicado nuestro registro para poner al día y agregar algunos elementos en nuestro hogar, y para asegurar un pago inicial a nuestra futura casa.<br/><br/>Pueden elegir algo de nuestro registro en The Knot o pueden contribuir a nuestra futura casa a través de Paypal o también en The Knot.<br/><br/>De cualquier manera, su presencia en nuestra vida siempre es suficiente. ¡Le agradecemos mucho su amor y apoyo! ¡Que Dios siempre lo bendiga!'
+  },
+  OUR_STORY_IMG_1_TEXT: {
+    en: "Pacha Nightclub for Francis' 21st Birthday, November 2009",
+    es: 'El Club Pacha para el 21 Cumpleaños de Francis, Noviembre del 2009'
+  },
+  OUR_STORY_IMG_2_TEXT: {
+    en: 'Sam visiting Francis at Syracuse University, Spring 2009',
+    es: 'Sam visitando a Francis en la Universidad de Syracuse, Primavera del 2009'
+  },
+  OUR_STORY_IMG_3_TEXT: {
+    en: 'Bowling @ New Roc City, December 2010',
+    es: 'Jugando Bolos en New Roc City, Diciembre del 2010'
+  },
+  OUR_STORY_IMG_4_TEXT: {
+    en: 'Birthday Party Pregame, November 2011',
+    es: 'Antes de la Fiesta de Cumpleaños, Noviembre del 2011'
+  },
+  OUR_STORY_IMG_5_TEXT: {
+    en: 'Out & About, March 2011',
+    es: 'Andando, Marzo del 2011'
+  },
+  OUR_STORY_IMG_6_TEXT: {
+    en: 'Princess and the Frog, Halloween 2012',
+    es: 'La Princesa y el Sapo, Halloween del 2012'
+  },
+  OUR_STORY_IMG_7_TEXT: {
+    en: "Sam's Surprise 25th Birthday Party, March 2012 edit to November 2012",
+    es: 'Fiesta de Sorpresa para el 25 Cumpleaños de Sam,  Noviembre del 2012'
+  },
+  OUR_STORY_IMG_8_TEXT: {
+    en: 'Storm and Jerome in the House, Halloween 2013',
+    es: 'La Mujer Tormenta de los X-Men y Jerome de el programa Martin,  Halloween del 2013'
+  },
+  OUR_STORY_IMG_9_TEXT: {
+    en: 'Rooftop Brunch Things, May 2014',
+    es: 'Bronche en una Azotea, Mayo del 2014'
+  },
+  OUR_STORY_IMG_10_TEXT: {
+    en: 'ATV Riding in Florida, November 2015',
+    es: 'Montando ATV en Florida, Noviembre del 2015'
+  },
+  OUR_STORY_IMG_11_TEXT: {
+    en: 'Volcan Arenal in Costa Rica, December 2016',
+    es: 'Volcan Arenal en Costa Rica, Diciembre del 2016'
+  },
+  OUR_STORY_IMG_12_TEXT: {
+    en: 'Kendrick Lamar Concert, July 2017',
+    es: 'Concierto de Kendrick Lamar, Julio del 2017'
+  },
+  OUR_STORY_IMG_13_TEXT: {
+    en: 'Elephant Sanctuary in Thailand, February 2018',
+    es: 'Santuario de Elefantes en Tailandia, Febrero del 2018'
+  },
+  OUR_STORY_IMG_14_TEXT: {
+    en: 'Engagement Day, October 2018',
+    es: 'Día de Compromiso, Octubre del 2018'
+  },
+  OUR_STORY_IMG_15_TEXT: {
+    en: 'Legends Suites at the Yankees Game, July 2018',
+    es: 'Asientos en los Legends Suites en el juego de los Yankees, Julio del 2018'
+  },
+  OUR_STORY_IMG_16_TEXT: {
+    en: 'Eiffel Tower in Paris, May 2019',
+    es: 'Torre Eiffel en París, Mayo del 2019'
+  },
+  OUR_STORY_IMG_17_TEXT: {
+    en: 'Engagement Photos Behind the Scenes, August 2020',
+    es: 'Fotos de Compromiso, detrás de escena, Agosto del 2020'
+  },
+  OUR_STORY_IMG_18_TEXT: {
+    en: 'Marina Del Rey, Bronx NY, July 1st 2020',
+    es: 'Marina Del Rey, Bronx NY, 1ero de Julio de 2020'
   }
 };

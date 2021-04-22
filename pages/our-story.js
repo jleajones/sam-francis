@@ -8,7 +8,8 @@ import { LanguageContext } from '../components/context/LanguageProvider';
 import {
   OVER_THE_YEARS,
   OUR_STORY_INTRO,
-  OUR_STORY_QUESTIONS
+  OUR_STORY_QUESTIONS,
+  OUR_STORY_IMG
 } from '../constants';
 import Question from '../components/question';
 import { FlexContainer } from '../components/containers';
@@ -123,6 +124,7 @@ const Gram = styled.div`
   }
 `;
 
+
 export default function OurStory() {
   const { t } = useTranslation();
   const [locale] = useContext(LanguageContext);
@@ -185,122 +187,16 @@ export default function OurStory() {
       <GramSection>
         <h2>{t(OVER_THE_YEARS.key)}</h2>
         <GramContainer>
-          <Gram size={gram} url="os_1">
-            <div />
-            <p>
-              <GramText>
-                Pacha Nightclub for Francis' 21st Birthday, November 2009
-              </GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_2">
-            <div />
-            <p>
-              <GramText>
-                Sam visiting Francis at Syracuse University, Spring 2009
-              </GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_3">
-            <div />
-            <p>
-              <GramText>Bowling at New Roc City, December 2010</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_4">
-            <div />
-            <p>
-              <GramText>Birthday Party Pregame, November 2011</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_5">
-            <div />
-            <p>
-              <GramText>Out & About, March 2011</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_6">
-            <div />
-            <p>
-              <GramText>Princess and the Frog, Halloween 2012</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_7">
-            <div />
-            <p>
-              <GramText>
-                Sam's Surprise 25th Birthday Party, March 2012
-              </GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_8">
-            <div />
-            <p>
-              <GramText>Storm and Jerome in the House, Halloween 2013</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_9">
-            <div />
-            <p>
-              <GramText>Rooftop Brunch Things, May 2014</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_10">
-            <div />
-            <p>
-              <GramText>ATV Riding in Florida, November 2015</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_11">
-            <div />
-            <p>
-              <GramText>Volcan Arenal in Costa Rica, December 2016</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_12">
-            <div />
-            <p>
-              <GramText>Kendrick Lamar Concert, July 2017</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_13">
-            <div />
-            <p>
-              <GramText>Elephant Sanctuary in Thailand, February 2018</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_14">
-            <div />
-            <p>
-              <GramText>Engagement Day, October 2018</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_15">
-            <div />
-            <p>
-              <GramText>Legends Suites at the Yankees Game, July 2018</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_16">
-            <div />
-            <p>
-              <GramText>Eiffel Tower in Paris, May 2019</GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_17">
-            <div />
-            <p>
-              <GramText>
-                Engagement Photos Behind the Scenes, August 2020
-              </GramText>
-            </p>
-          </Gram>
-          <Gram size={gram} url="os_18">
-            <div />
-            <p>
-              <GramText>Marina Del Rey, Bronx NY, July 1st 2020</GramText>
-            </p>
-          </Gram>
+          {OUR_STORY_IMG.map(img => (
+            <Gram size={gram} url={img.url}>
+              <div />
+              <p>
+                <GramText>
+                  {t(img.text.key)}
+                </GramText>
+              </p>
+            </Gram>
+          ))}
         </GramContainer>
       </GramSection>
     </>

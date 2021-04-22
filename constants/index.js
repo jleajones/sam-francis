@@ -348,33 +348,162 @@ export const REGISTRY_TITLE = {
 export const REGISTRY_NOTE = {
   key: 'REGISTRY_NOTE'
 }
-
-
-export const FAQS = [{
-  q: FAQ_QUESTION_1,
-  a: FAQ_ANSWER_1
-},{
-  q: FAQ_QUESTION_2,
-  a: FAQ_ANSWER_2
-},{
-  q: FAQ_QUESTION_3,
-  a: FAQ_ANSWER_3
-},{
-  q: FAQ_QUESTION_4,
-  a: FAQ_ANSWER_4
-},{
-  q: FAQ_QUESTION_5,
-  a: FAQ_ANSWER_5
-},{
-  q: FAQ_QUESTION_6,
-  a: FAQ_ANSWER_6
-},{
-  q: FAQ_QUESTION_7,
-  a: FAQ_ANSWER_7
-},{
-  q: FAQ_QUESTION_8,
-  a: FAQ_ANSWER_8
+export const OUR_STORY_IMG_1_TEXT = {
+  key: 'OUR_STORY_IMG_1_TEXT'
 }
+export const OUR_STORY_IMG_2_TEXT = {
+  key: 'OUR_STORY_IMG_2_TEXT'
+}
+export const OUR_STORY_IMG_3_TEXT = {
+  key: 'OUR_STORY_IMG_3_TEXT'
+}
+export const OUR_STORY_IMG_4_TEXT = {
+  key: 'OUR_STORY_IMG_4_TEXT'
+}
+export const OUR_STORY_IMG_5_TEXT = {
+  key: 'OUR_STORY_IMG_5_TEXT'
+}
+export const OUR_STORY_IMG_6_TEXT = {
+  key: 'OUR_STORY_IMG_6_TEXT'
+}
+export const OUR_STORY_IMG_7_TEXT = {
+  key: 'OUR_STORY_IMG_7_TEXT'
+}
+export const OUR_STORY_IMG_8_TEXT = {
+  key: 'OUR_STORY_IMG_8_TEXT'
+}
+export const OUR_STORY_IMG_9_TEXT = {
+  key: 'OUR_STORY_IMG_9_TEXT'
+}
+export const OUR_STORY_IMG_10_TEXT = {
+  key: 'OUR_STORY_IMG_10_TEXT'
+}
+export const OUR_STORY_IMG_11_TEXT = {
+  key: 'OUR_STORY_IMG_11_TEXT'
+}
+export const OUR_STORY_IMG_12_TEXT = {
+  key: 'OUR_STORY_IMG_12_TEXT'
+}
+export const OUR_STORY_IMG_13_TEXT = {
+  key: 'OUR_STORY_IMG_13_TEXT'
+}
+export const OUR_STORY_IMG_14_TEXT = {
+  key: 'OUR_STORY_IMG_14_TEXT'
+}
+export const OUR_STORY_IMG_15_TEXT = {
+  key: 'OUR_STORY_IMG_15_TEXT'
+}
+export const OUR_STORY_IMG_16_TEXT = {
+  key: 'OUR_STORY_IMG_16_TEXT'
+}
+export const OUR_STORY_IMG_17_TEXT = {
+  key: 'OUR_STORY_IMG_17_TEXT'
+}
+export const OUR_STORY_IMG_18_TEXT = {
+  key: 'OUR_STORY_IMG_18_TEXT'
+}
+
+export const OUR_STORY_IMG = [
+  {
+    url: 'os_1',
+    text: OUR_STORY_IMG_1_TEXT
+  },
+  {
+    url: 'os_2',
+    text: OUR_STORY_IMG_2_TEXT
+  },
+  {
+    url: 'os_3',
+    text: OUR_STORY_IMG_3_TEXT
+  },
+  {
+    url: 'os_4',
+    text: OUR_STORY_IMG_4_TEXT
+  },
+  {
+    url: 'os_5',
+    text: OUR_STORY_IMG_5_TEXT
+  },
+  {
+    url: 'os_6',
+    text: OUR_STORY_IMG_6_TEXT
+  },
+  {
+    url: 'os_7',
+    text: OUR_STORY_IMG_7_TEXT
+  },
+  {
+    url: 'os_8',
+    text: OUR_STORY_IMG_8_TEXT
+  },
+  {
+    url: 'os_9',
+    text: OUR_STORY_IMG_9_TEXT
+  },
+  {
+    url: 'os_10',
+    text: OUR_STORY_IMG_10_TEXT
+  },
+  {
+    url: 'os_11',
+    text: OUR_STORY_IMG_11_TEXT
+  },
+  {
+    url: 'os_12',
+    text: OUR_STORY_IMG_12_TEXT
+  },
+  {
+    url: 'os_13',
+    text: OUR_STORY_IMG_13_TEXT
+  },
+  {
+    url: 'os_14',
+    text: OUR_STORY_IMG_14_TEXT
+  },
+  {
+    url: 'os_15',
+    text: OUR_STORY_IMG_15_TEXT
+  },
+  {
+    url: 'os_16',
+    text: OUR_STORY_IMG_16_TEXT
+  },
+  {
+    url: 'os_17',
+    text: OUR_STORY_IMG_17_TEXT
+  },
+  {
+    url: 'os_18',
+    text: OUR_STORY_IMG_18_TEXT
+  }
+];
+
+export const FAQS = [
+  {
+    q: FAQ_QUESTION_1,
+    a: FAQ_ANSWER_1
+  },{
+    q: FAQ_QUESTION_2,
+    a: FAQ_ANSWER_2
+  },{
+    q: FAQ_QUESTION_3,
+    a: FAQ_ANSWER_3
+  },{
+    q: FAQ_QUESTION_4,
+    a: FAQ_ANSWER_4
+  },{
+    q: FAQ_QUESTION_5,
+    a: FAQ_ANSWER_5
+  },{
+    q: FAQ_QUESTION_6,
+    a: FAQ_ANSWER_6
+  },{
+    q: FAQ_QUESTION_7,
+    a: FAQ_ANSWER_7
+  },{
+    q: FAQ_QUESTION_8,
+    a: FAQ_ANSWER_8
+  }
 ]
 
 export const MOTHERS = [
