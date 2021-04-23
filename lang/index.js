@@ -376,8 +376,8 @@ export default {
     es: 'CONFIRME SU PRESENCIA'
   },
   RSVP_INTRO: {
-    en: 'Please confirm your presence by May 1st, 2021.',
-    es: 'Por favor confirme su presencia antes del 1ero de Mayo 2021.'
+    en: 'Please confirm your presence by May 28st, 2021.',
+    es: 'Por favor confirme su presencia antes del 28 de Mayo 2021.'
   },
   RSVP_INTRUCTIONS: {
     en:
