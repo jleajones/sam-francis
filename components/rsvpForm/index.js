@@ -114,10 +114,6 @@ export default function RsvpForm({ onSubmit }) {
   const [email, setEmail] = useState('');
   const [attendance, setAttendance] = useState('');
 
-  const [fName_g, setGFName] = useState('');
-  const [lName_g, setGLName] = useState('');
-  const [email_g, setGEmail] = useState('');
-  const [attendance_g, setGAttendance] = useState('');
   const [msg, setMsg] = useState('');
 
   const [error, setError] = useState('');
@@ -146,15 +142,12 @@ export default function RsvpForm({ onSubmit }) {
       name: `${fName} ${lName}`,
       email,
       rsvp: attendance,
-      guestName: `${fName_g} ${lName_g}`,
-      guestEmail: email_g,
-      guestRsvp: attendance_g,
       message: msg
     };
 
     const success = await onSubmit(formData);
 
-    if(success) setSubmitted(true);
+    if (success) setSubmitted(true);
   };
 
   return submitted === true ? null : (
@@ -210,62 +203,6 @@ export default function RsvpForm({ onSubmit }) {
                   name="rsvp"
                   value="no"
                   onChange={(e) => setAttendance(e.target.value)}
-                />
-                {t(RSVP_NO.key)}
-              </label>
-            </Input>
-          </InputsContainer>
-        </Inputs>
-
-        <Inputs>
-          <Input>
-            <label htmlFor="firstName_g">{t(RSVP_GUEST_FNAME.key)}</label>
-            <input
-              type="text"
-              id="firstName_g"
-              value={fName_g}
-              onChange={(e) => setGFName(e.target.value)}
-            />
-          </Input>
-          <Input>
-            <label htmlFor="lastName_g">{t(RSVP_GUEST_LNAME.key)}</label>
-            <input
-              type="text"
-              id="lastName_g"
-              value={lName_g}
-              onChange={(e) => setGLName(e.target.value)}
-            />
-          </Input>
-          <Input>
-            <label htmlFor="email_g">{t(RSVP_GUEST_EMAIL.key)}</label>
-            <input
-              type="text"
-              id="email_g"
-              value={email_g}
-              onChange={(e) => setGEmail(e.target.value)}
-            />
-          </Input>
-          <InputsContainer>
-            <Input style={{ marginRight: '30px' }}>
-              <label htmlFor="yes_g">
-                <input
-                  type="radio"
-                  id="yes_g"
-                  name="rsvp"
-                  value="yes"
-                  onChange={(e) => setGAttendance(e.target.value)}
-                />
-                {t(RSVP_YES.key)}
-              </label>
-            </Input>
-            <Input>
-              <label htmlFor="no_g">
-                <input
-                  type="radio"
-                  id="no_g"
-                  name="rsvp"
-                  value="no"
-                  onChange={(e) => setGAttendance(e.target.value)}
                 />
                 {t(RSVP_NO.key)}
               </label>
