@@ -480,9 +480,9 @@ export const OUR_STORY_IMG = [
 
 export const FAQS = [
   {
-    q: FAQ_QUESTION_1,
-    a: FAQ_ANSWER_1
-  },{
+  //   q: FAQ_QUESTION_1,
+  //   a: FAQ_ANSWER_1
+  // },{
     q: FAQ_QUESTION_2,
     a: FAQ_ANSWER_2
   },{

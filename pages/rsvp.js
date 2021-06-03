@@ -84,7 +84,6 @@ export default function Rsvp() {
         page="rsvp"
       />
       <Form>
-        <h2 style={{ marginBottom: '20px' }}>{t(RSVP_INTRO.key)}</h2>
         <p style={{ marginBottom: '40px', width: '80%', padding: '16px', background: '#ccc', fontSize:
         '18px', lineHeight: '26px',
           display: 'flex',

@@ -375,10 +375,10 @@ export default {
     en: 'RSVP',
     es: 'CONFIRME SU PRESENCIA'
   },
-  RSVP_INTRO: {
-    en: 'Please confirm your presence by May 28st, 2021.',
-    es: 'Por favor confirme su presencia antes del 28 de Mayo 2021.'
-  },
+  // RSVP_INTRO: {
+  //   en: 'Please confirm your presence by May 28st, 2021.',
+  //   es: 'Por favor confirme su presencia antes del 28 de Mayo 2021.'
+  // },
   RSVP_INTRUCTIONS: {
     en:
       'Due to restrictions, we ask that you please only RSVP for yourself and if there is another person listed on your invitation. Please note, invitations are for 21 and over. Many thanks for your understanding. ',
@@ -480,16 +480,16 @@ export default {
     en: 'Frequently Asked Questions',
     es: 'Preguntas mas frequentes'
   },
-  FAQ_QUESTION_1: {
-    en: 'When should I RSVP?',
-    es: '¿Cuándo debo de confirmar mi presencia?'
-  },
-  FAQ_ANSWER_1: {
-    en:
-      'Please RSVP by May 28th, 2021 and let us know if you will or won’t be able to attend the celebration.',
-    es:
-      'Por favor confirme su presencia antes del 28 de Mayo del 2021 y avísenos si podrá o no podrá asistir a la celebración.'
-  },
+  // FAQ_QUESTION_1: {
+  //   en: 'When should I RSVP?',
+  //   es: '¿Cuándo debo de confirmar mi presencia?'
+  // },
+  // FAQ_ANSWER_1: {
+  //   en:
+  //     'Please RSVP by May 28th, 2021 and let us know if you will or won’t be able to attend the celebration.',
+  //   es:
+  //     'Por favor confirme su presencia antes del 28 de Mayo del 2021 y avísenos si podrá o no podrá asistir a la celebración.'
+  // },
   FAQ_QUESTION_2: {
     en: 'Can I bring a date?',
     es: '¿Puedo traer un invitado?'
